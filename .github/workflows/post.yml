@@ -1,0 +1,44 @@
+name: Threads paylaşımı
+
+on:
+  schedule:
+    - cron: '2 6,10,15,18 * * *'   # 09:02 · 13:02 · 18:02 · 21:02 Türkiye saati (UTC+3)
+    - cron: '40 6,10,15,18 * * *'  # yedek tetik: GitHub ilkini geciktirirse; aynı gönderi iki kez gitmez
+    - cron: '6 6 10 11 *'          # 10 Kasım 09:06: anma paylaşımı (09:05)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Deneme: hiçbir şey paylaşma, token ve sıradaki paylaşımı göster'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-bot
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sıradaki paylaşımı gönder
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python3 bot.py
+
+      - name: Durumu kaydet
+        if: always() && inputs.dry_run != true
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          git add state.json config.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Paylaşım durumu"
+            for i in 1 2 3; do git push && break; git pull --rebase; done
+          fi

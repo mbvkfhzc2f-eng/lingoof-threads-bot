@@ -1,0 +1,42 @@
+name: Threads token yenileme
+
+# Uzun ömürlü token 60 gün geçerli; ayın 1'inde ve 15'inde yenilenerek 90 günlük plan boyunca canlı kalır.
+on:
+  schedule:
+    - cron: '30 3 1,15 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Token'ı yenile
+        env:
+          TOKEN: ${{ secrets.THREADS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -u
+          resp=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${TOKEN}")
+          new=$(printf '%s' "$resp" | python3 -c 'import sys,json; print(json.load(sys.stdin).get("access_token",""))' 2>/dev/null || true)
+          if [ -z "$new" ]; then
+            # Token 24 saatten yeniyse yenilenemez; hâlâ çalışıyorsa sorun yok
+            if curl -sf "https://graph.threads.net/v1.0/me?fields=id&access_token=${TOKEN}" > /dev/null; then
+              echo "Token şimdilik yenilenmedi ama geçerli; bir sonraki seferde tekrar denenecek."
+              exit 0
+            fi
+            echo "::error::Token geçersiz ya da süresi dolmuş. README'deki 2. adımla yeni token üretip THREADS_TOKEN'ı güncelle."
+            exit 1
+          fi
+          echo "::add-mask::$new"
+          days=$(printf '%s' "$resp" | python3 -c 'import sys,json; print(int(json.load(sys.stdin).get("expires_in",0))//86400)')
+          if [ "$new" = "$TOKEN" ]; then
+            echo "Token uzatıldı: ${days} gün geçerli."
+          elif [ -n "${GH_PAT:-}" ]; then
+            printf '%s' "$new" | GH_TOKEN="$GH_PAT" gh secret set THREADS_TOKEN --repo "$REPO"
+            echo "Yeni token kaydedildi: ${days} gün geçerli."
+          else
+            echo "::error::Meta yeni bir token verdi ama kaydedemedim. README'deki 'İsteğe bağlı: GH_PAT' adımını yap ya da yeni token üretip THREADS_TOKEN'ı güncelle."
+            exit 1
+          fi

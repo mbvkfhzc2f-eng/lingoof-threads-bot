@@ -1,8 +1,8 @@
 # LINGOOF Threads botu
 
-LINGOOF'un Threads planını kendi kendine paylaşır: **19 Ekim – 31 Aralık 2026**, her gün **09:00, 13:00, 18:00 ve 21:00**'da (Türkiye saati) o saate düşen gönderi resmi Threads API ile atılır. Bilgisayarının açık olması gerekmez; bot GitHub'ın sunucularında ücretsiz çalışır.
+LINGOOF'un Threads planını kendi kendine paylaşır: **18 Ekim (açılış) – 31 Aralık 2026**, her gün **09:00, 13:00, 18:00 ve 21:00**'da (Türkiye saati) o saate düşen gönderi resmi Threads API ile atılır. Bilgisayarının açık olması gerekmez; bot GitHub'ın sunucularında ücretsiz çalışır.
 
-- 293 gönderi: metinler, anketler, görselli gönderiler, özel günler (29 Ekim, 10 Kasım, Öğretmenler Günü, yılbaşı...) ve yanıtlar
+- 295 gönderi: metinler, anketler, görselli gönderiler, özel günler (29 Ekim, 10 Kasım, Öğretmenler Günü, yılbaşı...) ve yanıtlar
 - Her 7 gönderiden birinde App Store linki: `https://apps.apple.com/tr/app/lingoof/id6816741034`
 - Aynı gönderi iki kez gitmez. Saati 3 saatten fazla geçen gönderi atlanır, plan takvimdeki tarihlerden şaşmaz. Bot geç kurulsa bile hesabın ilk gönderisi tanışma gönderisi olur. 31 Aralık'tan sonra kendiliğinden durur.
 - Token ayın 1'inde ve 15'inde otomatik yenilenir.

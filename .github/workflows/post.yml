@@ -1,9 +1,12 @@
 name: Threads paylaşımı
 
 on:
+  # GitHub zamanlanmış çalıştırmaları geciktirebiliyor ya da hiç başlatmayabiliyor (19 Ekim'de 8 çalıştırmadan
+  # yalnızca 2'si, saatlerce geç başladı). Bu yüzden bot her 15 dakikada bir yoklanır. Bot yalnızca saati gelmiş
+  # gönderiyi paylaşır, aynı gönderi iki kez gitmez, yoklamaların çoğu birkaç saniyede "paylaşılacak bir şey yok" der.
+  # Dakikalar saat başından uzak seçildi (GitHub'ın en yoğun anı). Kesin saat için README'deki dış tetikleyiciye bakın.
   schedule:
-    - cron: '2 6,10,15,18 * * *'   # 09:02 · 13:02 · 18:02 · 21:02 Türkiye saati (UTC+3)
-    - cron: '40 6,10,15,18 * * *'  # yedek tetik: GitHub ilkini geciktirirse; aynı gönderi iki kez gitmez
+    - cron: '8,23,38,53 * * * *'
     - cron: '6 6 10 11 *'          # 10 Kasım 09:06: anma paylaşımı (09:05)
   workflow_dispatch:
     inputs:
@@ -25,6 +28,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main      # tetiklendiği anki değil en güncel state.json: art arda iki çalıştırma aynı gönderiyi atmasın
 
       - name: Sıradaki paylaşımı gönder
         env:

@@ -26,6 +26,8 @@ ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo('Europe/Istanbul')
 API = 'https://graph.threads.net/v1.0'
 LIMIT = 500                      # Threads metin sınırı; emojiler UTF-8 bayt uzunluğu kadar sayılır
+POLL_MAX = 25                    # anket seçeneği: 1–25 karakter; Türkçe harfler bayt sayılabileceği için baytla ölçülür
+MAX_TRIES = 3                    # aynı gönderi bu kadar kez hata verirse atlanır (her 15 dakikada boşuna denenmesin)
 
 
 def load(name, default=None):
@@ -116,6 +118,41 @@ def fill(text, cfg):
     return text.replace('{LINK}', url if url else 'App Store’da “LINGOOF” diye arat')
 
 
+def poll_ok(opts):
+    return 2 <= len(opts) <= 4 and all(o.strip() and len(o.encode('utf-8')) <= POLL_MAX for o in opts)
+
+
+def poll_as_text(text, opts):
+    """Anket oluşturulamazsa seçenekleri metne yazar; cevaplar yorumlarda toplanır."""
+    lines = '\n'.join(f'{k}) {o}' for k, o in zip('ABCD', opts))
+    full = f'{text}\n\n{lines}\n\nCevabını harfiyle yorumlara yaz 👇'
+    return full if threads_len(full) <= LIMIT else f'{text}\n\n{lines}'
+
+
+def report_error(msg):
+    """Hatayı GitHub Actions'ta görünür kılar: çalıştırma sayfasında kırmızı uyarı + adım özeti."""
+    one = msg.replace('%', '%25').replace('\r', '').replace('\n', '%0A')
+    print(f'::error title=Threads paylaşımı başarısız::{one}')
+    summary = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary:
+        with open(summary, 'a', encoding='utf-8') as f:
+            f.write(f'### Paylaşım başarısız\n\n```\n{msg}\n```\n')
+
+
+def fail(state, now, n, err):
+    """Hatayı state.json'a yazar (depoda görünsün), gerekirse gönderiyi atlar ve çalıştırmayı hata ile bitirir."""
+    state['last_error'] = {'at': now.isoformat(timespec='seconds'), 'n': n, 'error': str(err)[:800]}
+    if n is not None:
+        tries = state.setdefault('failures', {})
+        tries[str(n)] = tries.get(str(n), 0) + 1
+        if tries[str(n)] >= MAX_TRIES and n not in state['skipped']:
+            state['skipped'].append(n)
+            print(f'#{n} {MAX_TRIES} kez hata verdi, atlanıyor.')
+    save('state.json', state)
+    report_error(f'#{n}: {err}' if n is not None else str(err))
+    sys.exit(1)
+
+
 def main():
     cfg = load('config.json', {})
     state = load('state.json', {'posted': {}, 'skipped': []})
@@ -126,7 +163,10 @@ def main():
 
     if not token:
         sys.exit('THREADS_TOKEN tanımlı değil: GitHub > Settings > Secrets and variables > Actions altına ekle.')
-    me = api('GET', 'me', {'fields': 'id,username'}, token)
+    try:
+        me = api('GET', 'me', {'fields': 'id,username'}, token)
+    except RuntimeError as e:
+        fail(state, now, None, f'Threads hesabına bağlanılamadı (token geçersiz ya da süresi dolmuş olabilir): {e}')
     print(f'Hesap: @{me.get("username")}  ·  Türkiye saati: {now:%d.%m.%Y %H:%M}')
 
     grace = timedelta(hours=float(cfg.get('grace_hours', 3)))
@@ -152,6 +192,9 @@ def main():
         print(f'\n(Deneme) Sıradaki: #{nxt["n"]} · {when}'
               f'{" · anket" if nxt.get("poll") else ""}{" · görsel" if nxt.get("img") else ""}{" · yanıtlı" if nxt.get("reply") else ""}\n')
         print(fill(nxt['text'], cfg))
+        bad = [p['n'] for p in pending if p.get('poll') and not poll_ok(p['poll'])]
+        if bad:
+            print(f'\n(Not) Seçenekleri {POLL_MAX} baytı aşan anketler metin olarak gidecek: {bad}')
         if stale:
             print(f'\n(Not) Tarihi geçmiş {len(stale)} gönderi ilk gerçek çalışmada atlanacak.')
         return
@@ -169,30 +212,46 @@ def main():
     post = fresh[-1]
 
     text = fill(post['text'], cfg)
+    poll = post.get('poll')
     if threads_len(text) > LIMIT:
-        raise RuntimeError(f'#{post["n"]} Threads sınırını aşıyor ({threads_len(text)} > {LIMIT})')
+        fail(state, now, post['n'], f'metin Threads sınırını aşıyor ({threads_len(text)} > {LIMIT})')
     params = {'media_type': 'TEXT', 'text': text}
-    if post.get('poll'):
-        params['poll_attachment'] = json.dumps({k: v for k, v in zip(('option_a', 'option_b', 'option_c', 'option_d'), post['poll'])}, ensure_ascii=False)
+    if poll and poll_ok(poll):
+        params['poll_attachment'] = json.dumps({k: v for k, v in zip(('option_a', 'option_b', 'option_c', 'option_d'), poll)}, ensure_ascii=False)
+    elif poll:
+        print(f'Anket seçenekleri {POLL_MAX} baytı aşıyor; anket metin olarak paylaşılıyor.')
+        params['text'] = poll_as_text(text, poll)
     elif post.get('img') and image_base(cfg):
         params.update(media_type='IMAGE', image_url=image_base(cfg) + post['img'])
     elif '{LINK}' in post['text'] and cfg.get('app_store_url'):
         params['link_attachment'] = cfg['app_store_url']
 
     try:
-        post_id = publish(token, params)
+        try:
+            post_id = publish(token, params)
+        except RuntimeError as e:
+            if params.get('media_type') == 'IMAGE':
+                print(f'Görsel yüklenemedi, metin olarak paylaşılıyor: {e}')
+                post_id = publish(token, {'media_type': 'TEXT', 'text': text})
+            elif 'poll_attachment' in params:
+                print(f'Anket oluşturulamadı, metin olarak paylaşılıyor: {e}')
+                state['last_error'] = {'at': now.isoformat(timespec='seconds'), 'n': post['n'], 'error': f'anket: {e}'[:800]}
+                post_id = publish(token, {'media_type': 'TEXT', 'text': poll_as_text(text, poll)})
+            else:
+                raise
     except RuntimeError as e:
-        if params.get('media_type') != 'IMAGE':
-            raise
-        print(f'Görsel yüklenemedi, metin olarak paylaşılıyor: {e}')
-        post_id = publish(token, {'media_type': 'TEXT', 'text': text})
+        fail(state, now, post['n'], e)
     state['posted'][str(post['n'])] = {'id': post_id, 'at': now.isoformat(timespec='seconds')}
+    state.get('failures', {}).pop(str(post['n']), None)
     save('state.json', state)                          # yanıt başarısız olsa bile ana paylaşım tekrar gitmesin
     print(f"Paylaşıldı: #{post['n']} ({post['date']} {post['time']}) → {post_id}")
 
     if post.get('reply'):
         time.sleep(int(cfg.get('reply_delay_seconds', 45)))
-        reply_id = publish(token, {'media_type': 'TEXT', 'text': fill(post['reply'], cfg), 'reply_to_id': post_id})
+        try:
+            reply_id = publish(token, {'media_type': 'TEXT', 'text': fill(post['reply'], cfg), 'reply_to_id': post_id})
+        except RuntimeError as e:
+            fail(state, now, None, f'#{post["n"]} paylaşıldı ama altına yanıt eklenemedi: {e}')
         state['posted'][str(post['n'])]['reply_id'] = reply_id
         save('state.json', state)
         print(f'Yanıt eklendi → {reply_id}')

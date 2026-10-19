@@ -1,9 +1,10 @@
 name: Threads token yenileme
 
-# Uzun ömürlü token 60 gün geçerli; ayın 1'inde ve 15'inde yenilenerek 90 günlük plan boyunca canlı kalır.
+# Uzun ömürlü token 60 gün geçerli; yenilendikçe 60 gün uzar. GitHub zamanlanmış çalıştırmaları atlayabildiği için
+# ayda iki kez yerine üç günde bir denenir, böylece biri kaçsa bile token plan boyunca canlı kalır.
 on:
   schedule:
-    - cron: '30 3 1,15 * *'
+    - cron: '41 3 */3 * *'
   workflow_dispatch:
 
 jobs:

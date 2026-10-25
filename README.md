@@ -29,6 +29,9 @@ Deponun **Settings › Secrets and variables › Actions › New repository secr
 
 ## Ayarlar
 - `posts.json`: her gönderinin tarihi, saati ve metni burada. GitHub üzerinden düzenleyebilirsin; `{LINK}` yazan yere App Store linki girer.
+  - `topic`: Threads konu etiketi (ör. "İngilizce", "İngilizce Öğren"). Gönderiyi o konunun akışında da gösterir. Etiket reddedilirse gönderi etiketsiz gider, hiçbir zaman takılmaz.
+  - `poll`: 2–4 seçenekli anket (her seçenek en fazla 25 bayt). Anket oluşturulamazsa seçenekler metne yazılıp paylaşılır.
+  - `img` / `alt`: `img/` klasöründeki görsel ve görme engelliler için açıklaması. `card_*.jpg` dosyaları kaydedilmeye uygun LINGOOF bilgi kartları.
 - Durdurmak için: **Actions › Threads paylaşımı › ⋯ › Disable workflow**. Tekrar açınca o günün tarihinden devam eder.
 - Bir çalışma hata verirse GitHub sana e-posta atar. Son hatanın metni `state.json` içindeki `last_error` alanında da durur. Aynı gönderi 3 kez hata verirse atlanır.
 

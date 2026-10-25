@@ -99,6 +99,27 @@ def publish(token, params):
     return api('POST', 'me/threads_publish', {'creation_id': cid}, token)['id']
 
 
+EXTRAS = ('topic_tag', 'alt_text')               # erişimi artıran ama paylaşımı asla engellememesi gereken alanlar
+
+
+def publish_main(token, params):
+    """Ana gönderiyi paylaşır; konu etiketi ya da görsel açıklaması reddedilirse onlarsız bir kez daha dener."""
+    try:
+        return publish(token, params)
+    except RuntimeError as e:
+        extra = [k for k in EXTRAS if k in params]
+        if not extra:
+            raise
+        print(f'{" / ".join(extra)} ile paylaşılamadı, onlarsız deneniyor: {e}')
+        return publish(token, {k: v for k, v in params.items() if k not in extra})
+
+
+def topic_of(post):
+    """Threads konu etiketi: 1–50 karakter, nokta ve & içermez. Geçersizse etiket gönderilmez."""
+    t = (post.get('topic') or '').strip()
+    return t if t and len(t) <= 50 and '.' not in t and '&' not in t else None
+
+
 def slot_time(post):
     d = date.fromisoformat(post['date'])
     hh, mm = (int(x) for x in post['time'].split(':'))
@@ -190,7 +211,8 @@ def main():
             return
         when = 'şimdi' if fresh else f'{slot_time(nxt):%d.%m.%Y %H:%M}'
         print(f'\n(Deneme) Sıradaki: #{nxt["n"]} · {when}'
-              f'{" · anket" if nxt.get("poll") else ""}{" · görsel" if nxt.get("img") else ""}{" · yanıtlı" if nxt.get("reply") else ""}\n')
+              f'{" · anket" if nxt.get("poll") else ""}{" · görsel" if nxt.get("img") else ""}{" · yanıtlı" if nxt.get("reply") else ""}'
+              f'{" · konu: " + topic_of(nxt) if topic_of(nxt) else ""}\n')
         print(fill(nxt['text'], cfg))
         bad = [p['n'] for p in pending if p.get('poll') and not poll_ok(p['poll'])]
         if bad:
@@ -215,7 +237,8 @@ def main():
     poll = post.get('poll')
     if threads_len(text) > LIMIT:
         fail(state, now, post['n'], f'metin Threads sınırını aşıyor ({threads_len(text)} > {LIMIT})')
-    params = {'media_type': 'TEXT', 'text': text}
+    base = {'topic_tag': topic_of(post)} if topic_of(post) else {}
+    params = {'media_type': 'TEXT', 'text': text, **base}
     if poll and poll_ok(poll):
         params['poll_attachment'] = json.dumps({k: v for k, v in zip(('option_a', 'option_b', 'option_c', 'option_d'), poll)}, ensure_ascii=False)
     elif poll:
@@ -223,20 +246,22 @@ def main():
         params['text'] = poll_as_text(text, poll)
     elif post.get('img') and image_base(cfg):
         params.update(media_type='IMAGE', image_url=image_base(cfg) + post['img'])
+        if post.get('alt'):
+            params['alt_text'] = post['alt'][:1000]
     elif '{LINK}' in post['text'] and cfg.get('app_store_url'):
         params['link_attachment'] = cfg['app_store_url']
 
     try:
         try:
-            post_id = publish(token, params)
+            post_id = publish_main(token, params)
         except RuntimeError as e:
             if params.get('media_type') == 'IMAGE':
                 print(f'Görsel yüklenemedi, metin olarak paylaşılıyor: {e}')
-                post_id = publish(token, {'media_type': 'TEXT', 'text': text})
+                post_id = publish_main(token, {'media_type': 'TEXT', 'text': text, **base})
             elif 'poll_attachment' in params:
                 print(f'Anket oluşturulamadı, metin olarak paylaşılıyor: {e}')
                 state['last_error'] = {'at': now.isoformat(timespec='seconds'), 'n': post['n'], 'error': f'anket: {e}'[:800]}
-                post_id = publish(token, {'media_type': 'TEXT', 'text': poll_as_text(text, poll)})
+                post_id = publish_main(token, {'media_type': 'TEXT', 'text': poll_as_text(text, poll), **base})
             else:
                 raise
     except RuntimeError as e:

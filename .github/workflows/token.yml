@@ -37,7 +37,10 @@ jobs:
           elif [ -n "${GH_PAT:-}" ]; then
             printf '%s' "$new" | GH_TOKEN="$GH_PAT" gh secret set THREADS_TOKEN --repo "$REPO"
             echo "Yeni token kaydedildi: ${days} gün geçerli."
+          elif [ "$(date -u +%Y%m%d)" -lt 20261201 ]; then
+            # Eski token çalışmaya devam ediyor (18 Ekim'de alındı, ~17 Aralık'a kadar geçerli): 3 günde bir hata e-postası atma
+            echo "::warning::Meta yenilenmiş bir token verdi ama GH_PAT olmadığı için kaydedemedim. Şu anki token çalışıyor, yaklaşık 17 Aralık'a kadar geçerli. README'deki GH_PAT adımı yapılmazsa 1 Aralık'tan itibaren bu adım hata verir."
           else
-            echo "::error::Meta yeni bir token verdi ama kaydedemedim. README'deki 'İsteğe bağlı: GH_PAT' adımını yap ya da yeni token üretip THREADS_TOKEN'ı güncelle."
+            echo "::error::Token yakında (~17 Aralık) sona eriyor ve yenisini kaydedemiyorum. README'deki GH_PAT adımını yap ya da yeni token üretip THREADS_TOKEN'ı güncelle."
             exit 1
           fi

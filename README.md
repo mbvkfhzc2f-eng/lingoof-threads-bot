@@ -4,7 +4,7 @@ LINGOOF'un Threads planını kendi kendine paylaşır: **18 Ekim (açılış) �
 
 - 295 gönderi: metinler, anketler, görselli gönderiler, özel günler (29 Ekim, 10 Kasım, Öğretmenler Günü, yılbaşı...) ve yanıtlar
 - Her 7 gönderiden birinde App Store linki: `https://apps.apple.com/tr/app/lingoof/id6816741034`
-- Aynı gönderi iki kez gitmez. Saati 3 saatten fazla geçen gönderi atlanır, plan takvimdeki tarihlerden şaşmaz. Bot geç kurulsa bile hesabın ilk gönderisi tanışma gönderisi olur. 31 Aralık'tan sonra kendiliğinden durur.
+- Aynı gönderi iki kez gitmez. Saati 4 saatten fazla geçen gönderi atlanır, plan takvimdeki tarihlerden şaşmaz. Bot geç kurulsa bile hesabın ilk gönderisi tanışma gönderisi olur. 31 Aralık'tan sonra kendiliğinden durur.
 - GitHub botu her 15 dakikada bir yoklar; saati gelmiş gönderi varsa paylaşılır. GitHub'ın zamanlayıcısı garanti vermediği için dakikası dakikasına paylaşım için aşağıdaki **dış tetikleyici** önerilir.
 - Bir anket oluşturulamazsa gönderi kaybolmaz: seçenekler metne yazılıp gönderi yine paylaşılır.
 - Token üç günde bir otomatik yenilenir.
@@ -52,5 +52,13 @@ GitHub'ın kendi zamanlayıcısı garanti vermez. Yoğun günlerde çalıştırm
 
 GitHub'ın 15 dakikalık yoklaması yedek olarak çalışmaya devam eder. İkisi aynı anda çalışsa bile bir gönderi iki kez gitmez.
 
-## İsteğe bağlı: GH_PAT
-Meta yenilemede aynı token'ın süresini uzatır. Yeni bir token verirse botun onu kendisi kaydedebilmesi için GitHub'da sadece bu depoya yetkili bir token oluştur. GitHub › Settings › Developer settings › Fine-grained tokens yolunu izle, izin olarak Secrets: Read and write ver. Bunu `GH_PAT` adıyla secret olarak ekle. Eklemezsen ve token değişirse bot sana hata e-postası gönderir.
+## Gerekli: GH_PAT (token'ın aralık sonuna kadar geçerli kalması için)
+Threads token'ı 18 Ekim'de alındı ve yaklaşık 17 Aralık'ta sona erer. Plan 31 Aralık'a kadar sürdüğü için token'ın yenilenmesi gerekiyor. Meta her yenilemede yeni bir token veriyor ve botun bunu `THREADS_TOKEN` olarak kaydedebilmesi için GitHub'da bir izin token'ı lazım:
+
+1. GitHub › Settings › Developer settings › Personal access tokens › **Fine-grained tokens** › **Generate new token**
+   - Repository access: **Only select repositories** › `lingoof-threads-bot`
+   - Permissions › Repository permissions › **Secrets: Read and write** (başka izin gerekmez)
+   - Expiration: 1 Ocak 2027 ya da sonrası
+2. Oluşan token'ı kopyala ve deponun **Settings › Secrets and variables › Actions › New repository secret** bölümüne `GH_PAT` adıyla ekle.
+
+Bundan sonra token üç günde bir kendiliğinden yenilenir. GH_PAT eklenene kadar yenileme adımı Actions'ta yalnızca uyarı gösterir. 1 Aralık'tan itibaren hata verip e-posta gönderir ki token sona ermeden fark edilsin. GH_PAT eklemek istemezsen 1 Aralık civarında 2. adımdaki gibi yeni bir Threads token'ı üretip `THREADS_TOKEN`'ı güncellemen de yeterli.

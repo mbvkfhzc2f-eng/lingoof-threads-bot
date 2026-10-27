@@ -69,7 +69,7 @@ def report(rows, followers, now):
         first, last = followers[0], followers[-1]
         out.append(f'Takipçi: **{last["count"]}** ({first["date"]} tarihinden beri {last["count"] - first["count"]:+d})')
     out += ['', 'Etkileşim = beğeni + yorum + repost + alıntı + paylaşım. Oran = etkileşim / görüntülenme. '
-            'Tablolar gönderi başına ortalama etkileşime göre sıralı. Son 24 saatte paylaşılanlar henüz oturmadığı için düşük görünebilir.',
+            'Yorum sayısına botun kendi ilk yorumu dahil değil. Tablolar gönderi başına ortalama etkileşime göre sıralı. Son 24 saatte paylaşılanlar henüz oturmadığı için düşük görünebilir.',
             '', '## Seriye göre', '', table(by_series, 'Seri'), '', '## Saate göre', '', table(by_time, 'Saat'), '',
             '## En çok etkileşim alan 10 gönderi', '', '| # | Tarih | Seri | Görüntülenme | Beğeni | Yorum | Başlangıç |',
             '|---:|---|---|---:|---:|---:|---|']
@@ -105,6 +105,8 @@ def main():
             errors += 1
             print(f'#{n}: {e}')
             continue
+        if rec.get('reply_id') and m['replies']:        # botun kendi ilk yorumu etkileşim sayılmasın
+            m['replies'] -= 1
         data['posts'][n] = {**m, 'at': rec['at'], 'fetched': now.isoformat(timespec='seconds')}
 
     try:

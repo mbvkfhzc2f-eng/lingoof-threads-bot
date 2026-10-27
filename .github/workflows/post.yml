@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '8,23,38,53 * * * *'
     - cron: '6 6 10 11 *'          # 10 Kasım 09:06: anma paylaşımı (09:05)
-  # Kesin saat: Claude'un zamanlanmış görevi her paylaşım saatinde (09:06 · 13:06 · 18:06 · 21:06) .tick dosyasını
+  # Kesin saat: Claude'un zamanlanmış görevi her paylaşım saatinde (09:06 · 11:06 · 13:06 · 18:06 · 21:06) .tick dosyasını
   # güncelleyip push eder; push olayları GitHub'ın zamanlayıcısı gibi gecikmez. Başka dosya değişiklikleri tetiklemez.
   push:
     branches: [main]

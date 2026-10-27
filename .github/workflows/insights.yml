@@ -1,0 +1,40 @@
+name: Threads istatistikleri
+
+# Her sabah tüm gönderilerin görüntülenme/beğeni/yorum sayılarını ve takipçi sayısını çeker,
+# insights.json (ham veri) ve insights.md (seri ve saat bazında rapor) dosyalarını günceller.
+# Token'da threads_manage_insights izni yoksa yalnızca uyarı verir; paylaşımlar etkilenmez.
+on:
+  schedule:
+    - cron: '27 4 * * *'          # 07:27 Türkiye saati
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-insights
+  cancel-in-progress: false
+
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: İstatistikleri çek
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: python3 insights.py
+
+      - name: Raporu kaydet
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          git add -A -- insights.json insights.md 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "İstatistikler"
+            for i in 1 2 3; do git push && break; git pull --rebase; done
+          fi

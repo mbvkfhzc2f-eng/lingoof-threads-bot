@@ -8,6 +8,7 @@ LINGOOF'un Threads planını kendi kendine paylaşır: **18 Ekim (açılış) �
 - GitHub botu her 15 dakikada bir yoklar; saati gelmiş gönderi varsa paylaşılır. GitHub'ın zamanlayıcısı garanti vermediği için dakikası dakikasına paylaşım için aşağıdaki **dış tetikleyici** önerilir.
 - Bir anket oluşturulamazsa gönderi kaybolmaz: seçenekler metne yazılıp gönderi yine paylaşılır.
 - Token üç günde bir otomatik yenilenir.
+- Sohbetlere katılma: dil öğrenmeyi konuşan gönderilere günde en fazla 10 faydalı yanıt. Meta onayı gerekiyor, ayrıntılar aşağıda.
 
 ## Kurulum (bir kerelik, ~15 dakika)
 
@@ -41,6 +42,29 @@ Deponun **Settings › Secrets and variables › Actions › New repository secr
 - `insights.json`: ham veri ve günlük takipçi sayısı.
 
 Bunun için token'da `threads_manage_insights` izni olmalı: 2. adımın 4. maddesindeki gibi izni ekle, 5. maddedeki gibi **yeni token üret** ve `THREADS_TOKEN` secret'ını yeni token'la güncelle. İzin yoksa iş akışı yalnızca uyarı verir, paylaşımlar etkilenmez. Hemen denemek için: **Actions › Threads istatistikleri › Run workflow**.
+
+## Sohbetlere katılma (yanıt sistemi)
+LINGOOF hesabı, Threads'te dil öğrenmeyi konuşan insanların gönderilerine faydalı yanıtlar yazar. Amaç satış yapmak değil. İşe yarayan bir öneri, gönderiyi yazan kişiyi de okuyanları da profile getirir.
+
+- Günde 4 kez (10:37, 13:37, 15:37 ve 21:37) Claude'un **LINGOOF yanıt turu** görevi bir arama başlatır. `yanitlar/ayar.json` içindeki anahtar kelimelerle ("İngilizce kursu", "YDS", "dil öğrenmek"...) son 36 saatte paylaşılmış gönderiler bulunur.
+- Claude adayları okur ve yalnızca gerçekten katkı sunabileceği gönderilere `yanitlar/YAZIM_REHBERI.md`'deki kurallara göre yanıt yazar. Reklam, hassas konu, konu dışı gönderiler ve çocuk yaşta görünen yazarların gönderileri geçilir.
+- Yanıtlar 1–2,5 dakika arayla LINGOOF hesabından gider.
+- Sınırlar: günde en fazla 10 yanıt ve aynı kişiye 14 günde en fazla bir yanıt. Yanıtlarda link, hashtag, @etiket ya da "indir" çağrısı olmaz. Bu kurallar kodda da denetlenir.
+- Kayıtlar: yazılan yanıtlar `yanitlar/kararlar.json`, gönderilenler ve linkleri `yanitlar/gonderilen.json`, son aramanın özeti `yanitlar/durum.json` dosyasında durur. Başkalarının gönderi metinleri herkese açık bu depoda düz metin olarak durmasın diye `yanitlar/adaylar.enc.json` şifreli tutulur. Bu dosyayı yalnızca Claude'un görevi açabilir.
+
+### Kurulum (bir kerelik)
+Threads, bir uygulamanın başkalarının gönderilerini aramasına ve onlara yanıt vermesine ancak Meta'nın uygulama incelemesinden (App Review) sonra izin veriyor. Onay gelene kadar arama yalnızca LINGOOF'un kendi gönderilerini döndürür. Sistem bu sürede hiçbir şey göndermez ve Claude'un her turu "onay bekleniyor" diye biter.
+
+1. [developers.facebook.com](https://developers.facebook.com) › uygulaman › **Use cases › Access the Threads API › Customize** bölümünde `threads_keyword_search` ve `threads_manage_replies` izinlerini ekle. Mevcut izinler kalsın.
+2. Kurulumun 2. adımındaki gibi **yeni token üret** ve `THREADS_TOKEN` secret'ını güncelle.
+3. **App Review › Permissions and Features** bölümünden `threads_keyword_search` ve `threads_manage_replies` için **Advanced Access** iste. Başvuru formuna yapıştırılacak açıklamalar `yanitlar/META_INCELEME.md` dosyasında. Meta işletme doğrulaması ya da ek bilgi isteyebilir.
+4. Onay gelince başka bir şey yapmana gerek yok, bir sonraki turda yanıtlar kendiliğinden başlar. `yanitlar/durum.json` hâlâ "henüz onaylamamış" diyorsa token'ı bir kez daha üretip secret'ı güncelle.
+
+### Ayarlar ve durdurma
+- `yanitlar/ayar.json`: anahtar kelimeler, günlük sınır (`gunluk_limit`), aynı kişiye tekrar yanıt aralığı (`yazar_araligi_gun`) ve gönderiyi baştan eleyen kelimeler (`yasak_kelimeler`).
+- Yanıtların tonu ve kuralları `yanitlar/YAZIM_REHBERI.md` dosyasında. Burada yapılan değişiklik bir sonraki turdan itibaren geçerli olur.
+- Durdurmak için `yanitlar/ayar.json` içinde `"acik": false` yap ya da Claude uygulamasında **LINGOOF yanıt turu** görevini duraklat.
+- Deneme: **Actions › Threads yanıt araması › Run workflow** ("Deneme" işaretli kalsın). Kayıtta aramanın bulduğu gönderiler ve hangisinin neden elendiği görünür. Hiçbir şey kaydedilmez.
 
 ## Kesin saat için dış tetikleyici (önerilir)
 GitHub'ın kendi zamanlayıcısı garanti vermez. Yoğun günlerde çalıştırmaları saatlerce geciktirebilir ya da hiç başlatmayabilir; 19 Ekim'de 8 çalıştırmadan yalnızca 2'si başladı. Gönderilerin tam saatinde gitmesi için ücretsiz [cron-job.org](https://cron-job.org) botu tetikleyebilir:

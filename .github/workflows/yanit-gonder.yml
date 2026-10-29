@@ -1,0 +1,47 @@
+name: Threads yanıt gönderimi
+
+# Claude yanıtları yanitlar/kararlar.json'a yazıp push edince çalışır: yanıtlar günlük sınır içinde,
+# birkaç dakika arayla LINGOOF hesabından paylaşılır ve sonuç yanitlar/gonderilen.json'a yazılır.
+on:
+  push:
+    branches: [main]
+    paths: ['yanitlar/kararlar.json']
+  workflow_dispatch:
+    inputs:
+      deneme:
+        description: 'Deneme: hiçbir şey gönderme, sıradaki yanıtları göster'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-yanit-gonder
+  cancel-in-progress: false
+
+jobs:
+  gonder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Yanıtları gönder
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          DENEME: ${{ inputs.deneme }}
+        run: python3 yanit.py gonder
+
+      - name: Kaydı sakla
+        if: always() && inputs.deneme != true
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          git add yanitlar/gonderilen.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Yanıt gönderimi"
+            for i in 1 2 3 4; do git push && break; git pull --rebase; done
+          fi

@@ -1,0 +1,48 @@
+name: Threads yanıt araması
+
+# Claude'un "LINGOOF yanıt turu" görevi günde 4 kez yanitlar/.ara dosyasını push eder ve bu arama başlar:
+# anahtar kelimelerle son Türkçe dil öğrenme gönderileri bulunur, elenir ve adaylar şifrelenip kaydedilir.
+# Ayrıntılar: README › Sohbetlere katılma.
+on:
+  push:
+    branches: [main]
+    paths: ['yanitlar/.ara']
+  workflow_dispatch:
+    inputs:
+      deneme:
+        description: "Deneme: bulunan gönderileri (LINGOOF'un kendi gönderileri dahil) kayıtta göster, hiçbir şey kaydetme"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-yanit-bul
+  cancel-in-progress: false
+
+jobs:
+  bul:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Gönderileri ara
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          DENEME: ${{ inputs.deneme }}
+        run: python3 yanit.py bul
+
+      - name: Sonucu kaydet
+        if: always() && inputs.deneme != true
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          git add yanitlar/adaylar.enc.json yanitlar/durum.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Yanıt adayları"
+            for i in 1 2 3 4; do git push && break; git pull --rebase; done
+          fi

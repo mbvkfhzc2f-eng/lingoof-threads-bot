@@ -1,0 +1,52 @@
+{
+ "acik": true,
+ "anahtar_kelimeler": [
+  "İngilizce öğrenmek",
+  "İngilizce konuşmak",
+  "İngilizce kursu",
+  "İngilizce çalışmak",
+  "İngilizcem",
+  "İngilizce pratik",
+  "yabancı dil",
+  "dil öğrenmek",
+  "YDS",
+  "YÖKDİL",
+  "dil sınavı",
+  "kelime ezberlemek"
+ ],
+ "limit_yeni": 25,
+ "limit_populer": 10,
+ "en_eski_saat": 36,
+ "en_fazla_aday": 30,
+ "en_kisa_metin": 25,
+ "yasak_kelimeler": [
+  "indirim",
+  "kampanya",
+  "kayıtlarımız",
+  "ders veriyorum",
+  "ders verilir",
+  "sponsor",
+  "reklam",
+  "çekiliş",
+  "iş ilanı",
+  "eleman aranıyor",
+  "vefat",
+  "cenaze",
+  "başsağlığı",
+  "intihar",
+  "taciz",
+  "tecavüz",
+  "deprem",
+  "LGS"
+ ],
+ "gunluk_limit": 10,
+ "tur_basina_yanit": 3,
+ "tur_basina_gonderim": 4,
+ "yazar_araligi_gun": 14,
+ "bekleme_saniye": [
+  60,
+  150
+ ],
+ "en_kisa_yanit": 80,
+ "en_fazla_emoji": 2
+}

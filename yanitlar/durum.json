@@ -1,0 +1,10 @@
+{
+ "istek": "2026-10-29T09:36:18Z",
+ "son_arama": "2026-10-29T09:36:28Z",
+ "sorgu": 0,
+ "sonuc": 0,
+ "kendi_gonderisi": 0,
+ "aday": 0,
+ "hata": "1 sorgu başarısız. İlki: \"İngilizce öğrenmek\" (RECENT): Threads API 403 (keyword_search): {\"error\":{\"message\":\"Application does not have permission for this action\",\"type\":\"THApiException\",\"code\":10,\"fbtrace_id\":\"A2KnhAodPovPN5TPtzDxfNw\"}}",
+ "not": "Anahtar kelime araması çalışmadı. Token'da threads_keyword_search izni yoksa README › Sohbetlere katılma adımlarını uygula."
+}

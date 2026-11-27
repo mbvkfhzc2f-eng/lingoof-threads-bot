@@ -1,6 +1,6 @@
 # LINGOOF Threads istatistikleri
-Son güncelleme: 26.11.2026 17:03 (Türkiye saati) · 169 gönderi · toplam 10.534 görüntülenme · etkileşim oranı %2.2
-Takipçi: **59** (2026-10-27 tarihinden beri +48)
+Son güncelleme: 27.11.2026 17:01 (Türkiye saati) · 174 gönderi · toplam 10.695 görüntülenme · etkileşim oranı %2.2
+Takipçi: **60** (2026-10-27 tarihinden beri +49)
 
 Etkileşim = beğeni + yorum + repost + alıntı + paylaşım. Oran = etkileşim / görüntülenme. Yorum sayısına botun kendi ilk yorumu dahil değil. Tablolar gönderi başına ortalama etkileşime göre sıralı. Son 24 saatte paylaşılanlar henüz oturmadığı için düşük görünebilir.
 
@@ -9,45 +9,46 @@ Etkileşim = beğeni + yorum + repost + alıntı + paylaşım. Oran = etkileşim
 | Seri | Gönderi | Ort. görüntülenme | Ort. beğeni | Ort. yorum | Etkileşim oranı |
 |---|---:|---:|---:|---:|---:|
 | Bunu Biliyor muydun? | 3 | 421 | 3.0 | 1.7 | %1.2 |
-| Akşam Notu | 11 | 92 | 2.0 | 0.1 | %2.7 |
+| Akşam Notu | 12 | 86 | 1.8 | 0.1 | %2.6 |
 | Kelime Kutusu | 5 | 61 | 2.0 | 0.0 | %3.6 |
-| Okulda vs Gerçek | 4 | 17 | 2.0 | 0.0 | %11.6 |
-| Mini Diyalog | 3 | 14 | 2.0 | 0.0 | %14.3 |
+| Okulda vs Gerçek | 4 | 18 | 2.0 | 0.0 | %11.1 |
+| Mini Diyalog | 3 | 14 | 2.0 | 0.0 | %14.0 |
 | Tanıdık Geldi mi? | 1 | 21 | 2.0 | 0.0 | %9.5 |
-| Cuma Modu | 5 | 65 | 1.6 | 0.0 | %2.8 |
-| Günün Cümlesi | 18 | 104 | 1.6 | 0.1 | %1.7 |
-| Haftanın Özeti | 5 | 53 | 1.6 | 0.0 | %3.0 |
+| Cuma Modu | 5 | 66 | 1.6 | 0.0 | %2.7 |
+| Günün Cümlesi | 19 | 101 | 1.5 | 0.1 | %1.7 |
+| Haftanın Özeti | 5 | 54 | 1.6 | 0.0 | %3.0 |
 | Nasıl Yapılır? | 2 | 132 | 0.5 | 0.0 | %1.1 |
 | Telaffuz | 9 | 104 | 1.3 | 0.0 | %1.4 |
 | Doğru mu Yanlış mı? | 5 | 45 | 1.4 | 0.0 | %3.1 |
 | Goof'un Günlüğü | 6 | 77 | 1.2 | 0.2 | %1.7 |
 | Hata Avı | 10 | 54 | 1.2 | 0.0 | %2.4 |
-| Sesli Görev | 4 | 57 | 1.2 | 0.0 | %2.2 |
+| Sesli Görev | 4 | 58 | 1.2 | 0.0 | %2.2 |
 | Gerçek Hayat Sahnesi | 5 | 110 | 1.0 | 0.0 | %1.1 |
-| Öğle Testi | 11 | 28 | 1.1 | 0.0 | %3.9 |
+| Öğle Testi | 11 | 29 | 1.1 | 0.0 | %3.7 |
 | Açılış | 1 | 18 | 1.0 | 0.0 | %5.6 |
 | Tanışma | 1 | 51 | 1.0 | 0.0 | %2.0 |
-| Goof'un Pazar Hikâyesi | 5 | 98 | 1.0 | 0.0 | %1.0 |
+| Goof'un Pazar Hikâyesi | 5 | 99 | 1.0 | 0.0 | %1.0 |
 | LINGOOF Nedir? | 1 | 5 | 1.0 | 0.0 | %20.0 |
 | Cumhuriyet Bayramı | 1 | 3 | 1.0 | 0.0 | %33.3 |
-| Sen Olsan? | 3 | 10 | 1.0 | 0.0 | %9.7 |
 | Halloween | 1 | 7 | 1.0 | 0.0 | %14.3 |
-| Öğretmenler Günü | 1 | 17 | 1.0 | 0.0 | %5.9 |
-| Günün Kelimesi | 28 | 29 | 0.9 | 0.0 | %3.1 |
-| Anket | 14 | 27 | 0.7 | 0.0 | %2.6 |
+| Öğretmenler Günü | 1 | 19 | 1.0 | 0.0 | %5.3 |
+| Günün Kelimesi | 29 | 28 | 0.9 | 0.0 | %3.1 |
+| Sen Olsan? | 4 | 9 | 0.8 | 0.0 | %8.6 |
+| Anket | 14 | 28 | 0.7 | 0.0 | %2.5 |
 | Goof Soruyor | 5 | 9 | 0.6 | 0.0 | %6.5 |
 | Anma | 1 | 13 | 0.0 | 0.0 | %0.0 |
+| Thanksgiving | 1 | 8 | 0.0 | 0.0 | %0.0 |
 
 ## Saate göre
 
 | Saat | Gönderi | Ort. görüntülenme | Ort. beğeni | Ort. yorum | Etkileşim oranı |
 |---|---:|---:|---:|---:|---:|
-| 21:00 | 36 | 67 | 1.6 | 0.1 | %2.7 |
-| 18:00 | 35 | 95 | 1.4 | 0.1 | %1.7 |
-| 09:00 | 33 | 95 | 1.4 | 0.0 | %1.7 |
-| 13:00 | 35 | 24 | 1.0 | 0.0 | %4.4 |
+| 21:00 | 37 | 66 | 1.5 | 0.1 | %2.7 |
+| 18:00 | 36 | 93 | 1.3 | 0.1 | %1.7 |
+| 09:00 | 34 | 94 | 1.4 | 0.0 | %1.7 |
 | 17:15 | 1 | 18 | 1.0 | 0.0 | %5.6 |
-| 11:00 | 28 | 29 | 0.9 | 0.0 | %3.1 |
+| 13:00 | 36 | 24 | 1.0 | 0.0 | %4.2 |
+| 11:00 | 29 | 28 | 0.9 | 0.0 | %3.1 |
 | 09:05 | 1 | 13 | 0.0 | 0.0 | %0.0 |
 
 ## En çok etkileşim alan 10 gönderi
@@ -56,7 +57,7 @@ Etkileşim = beğeni + yorum + repost + alıntı + paylaşım. Oran = etkileşim
 |---:|---|---|---:|---:|---:|---|
 | 12 | 2026-10-21 21:00 | Akşam Notu | 643 | 12 | 0 | Kelime değil, kalıp topla 🧩 |
 | 23 | 2026-10-24 18:00 | Bunu Biliyor muydun? | 1179 | 5 | 5 | Bunu biliyor muydun? 🤓 |
-| 61 | 2026-11-03 09:00 | Günün Cümlesi | 706 | 8 | 0 | Otel resepsiyonu. Valizler elinde, sıra  |
+| 61 | 2026-11-03 09:00 | Günün Cümlesi | 708 | 8 | 0 | Otel resepsiyonu. Valizler elinde, sıra  |
 | 128 | 2026-11-20 18:00 | Cuma Modu | 56 | 4 | 0 | Cuma modu: tekerleme vakti 😄 |
 | 15 | 2026-10-22 18:00 | Kelime Kutusu | 19 | 3 | 0 | Kelime kutusu 📦 Konuşmaya cesaret veren  |
 | 24 | 2026-10-24 21:00 | Goof'un Günlüğü | 304 | 3 | 1 | Goof'un günlüğü 💜 |

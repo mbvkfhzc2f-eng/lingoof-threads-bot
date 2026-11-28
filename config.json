@@ -2,5 +2,7 @@
  "app_store_url": "https://apps.apple.com/tr/app/lingoof/id6816741034",
  "image_base_url": "auto",
  "grace_hours": 4,
- "reply_delay_seconds": 45
+ "reply_delay_seconds": 45,
+ "media_base_url": "https://raw.githubusercontent.com/mbvkfhzc2f-eng/lingoof-threads-bot/medya/",
+ "video_base_url": ""
 }

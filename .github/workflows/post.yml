@@ -16,9 +16,17 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Deneme: hiçbir şey paylaşma, token ve sıradaki paylaşımı göster'
+        description: 'Deneme: hiçbir şey paylaşma, token, sıradaki paylaşım, plan denetimi ve medya adreslerini göster'
         type: boolean
         default: true
+      dogrula:
+        description: 'Doğrula: sıradaki medyalı gönderilerin konteynerlerini oluştur ama yayımlama (Meta medyayı kabul ediyor mu?)'
+        type: boolean
+        default: false
+      dogrula_n:
+        description: 'Doğrulanacak gönderi numaraları (ör. 400,401). Boşsa sıradaki 3 medyalı gönderi.'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -30,7 +38,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
         with:
@@ -52,10 +60,12 @@ jobs:
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           DRY_RUN: ${{ inputs.dry_run }}
+          VALIDATE: ${{ inputs.dogrula }}
+          VALIDATE_N: ${{ inputs.dogrula_n }}
         run: python3 bot.py
 
       - name: Durumu kaydet
-        if: always() && inputs.dry_run != true
+        if: always() && inputs.dry_run != true && inputs.dogrula != true
         run: |
           git config user.name "lingoof-bot"
           git config user.email "lingoof-bot@users.noreply.github.com"

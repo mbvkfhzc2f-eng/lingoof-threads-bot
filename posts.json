@@ -2365,33 +2365,19 @@
   "topic": "İş İngilizcesi"
  },
  {
-  "n": 325,
-  "date": "2026-11-29",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\npromotion (prı-MOU-şın)\n= terfi\n\n“She got a promotion last month!”\n= Geçen ay terfi aldı!\n\n✍️ Bir arkadaşın terfi aldı. Onu İngilizce nasıl tebrik edersin?\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Tebrik için: “Congrats on your promotion! You deserve it.” = Terfin hayırlı olsun, hak ettin! Not: “promotion” mağazada “kampanya, indirim” anlamına da gelir 🎉",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 163,
+  "n": 400,
   "date": "2026-11-29",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Mülakat",
-   "E-posta",
-   "Toplantı",
-   "Sunum"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Erasmus'ta ilk gün. Ev arkadaşın Emma kapıdan giriyor: “What's up?”\n\nÇoğumuzun refleksi: “I'm fine, thank you. And you?”\n\nAma “What's up?” nasılsın demek değil, “ne var ne yok” demek. Doğal cevap:\nNot much! Just unpacking. You?\n\nSana ilk “What's up?” dendiğinde ne demiştin? 😅",
+  "video": "medya:v3/r01-pov-whatsup.mp4",
+  "fallback_img": "medya:v3/r01-pov-whatsup.jpg",
+  "alt": "Goof'lu animasyon: Emma “What's up?” diyor; “I'm fine, thank you” yerine “Not much! Just unpacking. You?” öneriliyor.",
+  "spoiler": [
+   "Not much! Just unpacking. You?"
   ],
-  "text": "Bir haftadır mülakat, e-posta ve toplantı İngilizcesi konuşuyoruz 💼\n\nİş İngilizcesinde en çok neyi geliştirmek istersin? Seçimini yap, en çok zorlandığın anı da yorumlara yaz 👇",
-  "reply": null,
-  "topic": "İngilizce Öğren"
+  "src": "r01-pov-whatsup"
  },
  {
   "n": 164,
@@ -2411,11 +2397,11 @@
   "time": "21:00",
   "series": "Haftanın Özeti",
   "cta": true,
-  "img": "card_is.jpg",
+  "img": "v3/th-is.jpg",
   "poll": null,
-  "text": "İş haftasının özeti: Mülakat, e-posta ve toplantı için 6 iş İngilizcesi kalıbı 💼\n\nKaydet 🔖 Pazartesi lazım olabilir.\n\nBu haftanın sesli görevini yaptıysan yorumlara ✅ bırak 💜",
+  "text": "İş haftasının özeti: Mülakat, e-posta ve toplantı için 6 iş İngilizcesi kalıbı 💼\n\nKaydet 🔖 Pazartesi lazım olabilir.\n\nBu hafta en çok hangisi işine yaradı? Numarasını yaz 💜",
   "reply": "Temeli Goof'la sağlamlaştır: LINGOOF'ta A1'den C1'e kısa dersler, Türkçe açıklamalar 💜\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. İş İngilizcesi: 6 kalıp 💼. Tell me about yourself. (Cevap: şimdi, geçmiş, gelecek); I hope you're doing well. (E-postaya kibar bir giriş); by Friday (En geç cumaya kadar); Sorry to interrupt, but... (Böldüğüm için pardon ama...); I'll get back to you. (Sana dönerim); Thanks for your time. (Vaktiniz için teşekkürler).",
+  "alt": "LINGOOF özet kartı, Goof 2.0 ile: iş İngilizcesi için 6 kalıp. Tell me about yourself, I hope you're doing well, by Friday, Sorry to interrupt but, I'll get back to you, Thanks for your time.",
   "topic": "İş İngilizcesi"
  },
  {
@@ -2431,33 +2417,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 326,
-  "date": "2026-11-30",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nintroduce (in-trı-DYUUS)\n= tanıştırmak, tanıtmak\n\n“Let me introduce you to my friend Elif.”\n= Seni arkadaşım Elif'le tanıştırayım.\n\n✍️ Kendini bir cümleyle tanıt: “Let me introduce myself. I'm...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Tanıştırıldığında söylenecek klasik: “Nice to meet you!” Cevabı: “Nice to meet you too!” 🤝",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 167,
+  "n": 401,
   "date": "2026-11-30",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Hava durumu",
-   "Hafta sonu",
-   "İş",
-   "Spor"
-  ],
-  "text": "Otobüs durağında, kahve sırasında, toplantı başlamadan önce... O kısa sohbetler hep bir konudan açılır 💬\n\nSmall talk'ta en çok ne konuşulur sence? Oyunu ver, sonucu birlikte görelim 👇",
-  "reply": "Bu hafta her gün bir small talk kalıbı var. Yarın sabah sırada hafta sonu planları 😉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Kolay gelsin”i İngilizceye nasıl çevirirsin?\n\n“Let it come easy!” dersen kimse anlamaz 😄 İngilizcede tek karşılığı yok, duruma göre değişiyor:\n\nÇalışan bir arkadaşa: Don't work too hard!\nYeni işe başlayana: Good luck with it!\nZorlanan birine: Hang in there!\n\nBu hafta en çok hangisine ihtiyacın var?",
+  "video": "medya:v3/r02-nasil-kolaygelsin.mp4",
+  "fallback_img": "medya:v3/r02-nasil-kolaygelsin.jpg",
+  "alt": "Goof'lu animasyon: “Kolay gelsin” için üç doğal İngilizce karşılık.",
+  "src": "r02-nasil-kolaygelsin"
  },
  {
   "n": 168,
@@ -2467,8 +2436,8 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Goof soruyor 🎙️\n\n“What made you smile today?”\n= Bugün seni ne gülümsetti?\n\nŞöyle başlayabilirsin: “I smiled when...”\nYa da: “... made me smile.”\n(“made me to smile” değil, araya “to” girmiyor 😉)\n\nCevabını yorumlara İngilizce yaz, tek cümle yeter.\n\nYazdıktan sonra bir de sesli söyle: LINGOOF'ta Goof Talk AI'da mikrofona dokun, Goof seni dinliyor 💜\n👉 {LINK}",
-  "reply": "Benden başlayayım ☕\n“My coffee was perfect this morning!”\n= Bu sabah kahvem mükemmeldi!\nKüçücük bir şey ama yüzümü güldürdü 😄 Seninkini merak ediyorum!",
+  "text": "Goof soruyor 🎙️\n\n“What made you smile today?”\n= Bugün seni ne gülümsetti?\n\nŞöyle başlayabilirsin: “I smiled when...”\nYa da: “... made me smile.”\n(“made me to smile” değil, araya “to” girmiyor 😉)\n\nCevabını yorumlara İngilizce yaz, tek cümle yeter.",
+  "reply": "Benden başlayayım ☕\n“My coffee was perfect this morning!”\n= Bu sabah kahvem mükemmeldi!\nKüçücük bir şey ama yüzümü güldürdü 😄 Seninkini merak ediyorum!\n\nYazdıktan sonra bir de sesli söyle: LINGOOF'ta Goof Talk AI'da mikrofona dokun, Goof seni dinliyor 💜 {LINK}",
   "topic": "İngilizce Konuşma"
  },
  {
@@ -2479,7 +2448,7 @@
   "cta": false,
   "img": null,
   "poll": null,
-  "text": "Haftanın sesli görevi ☕ Small talk haftası başladı.\n\n“Small talk boş muhabbet” diyenlere küçük bir itiraz: Hava, hafta sonu, trafik... bunlar sohbetin ısınma turu. İngilizce konuşulan pek çok kültürde güven bu kısa sohbetlerle kuruluyor.\n\nGörev: Bu hafta her gün bu iki açılıştan birini yüksek sesle söyle, sonra kendine bir takip sorusu sor:\n“How's it going?” = Nasıl gidiyor?\n“Any plans for the weekend?” = Hafta sonu planın var mı?\n\nYaptığın gün yorumlara ✅",
+  "text": "Haftanın sesli görevi ☕ Small talk haftası başladı.\n\n“Small talk boş muhabbet” diyenlere küçük bir itiraz: Hava, hafta sonu, trafik... bunlar sohbetin ısınma turu. İngilizce konuşulan pek çok kültürde güven bu kısa sohbetlerle kuruluyor.\n\nGörev: Bu hafta her gün bu iki açılıştan birini yüksek sesle söyle, sonra kendine bir takip sorusu sor:\n“How's it going?” = Nasıl gidiyor?\n“Any plans for the weekend?” = Hafta sonu planın var mı?\n\nSen sohbeti en çok hangisiyle açarsın?",
   "reply": null,
   "topic": "İngilizce Konuşma"
  },
@@ -2496,28 +2465,53 @@
   "topic": "İngilizce"
  },
  {
-  "n": 327,
+  "n": 450,
   "date": "2026-12-01",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nhang out (heng AUT)\n= takılmak, vakit geçirmek\n\n“Do you want to hang out this weekend?”\n= Bu hafta sonu takılmak ister misin?\n\n✍️ Arkadaşlarınla en çok nerede takılırsın? “We usually hang out at...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Kalıp hâli: “a hangout spot” = takılma mekânı. “This café is our favorite hangout.” ☕",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "Bu 5 kelime sandığın anlamda değil: sympathetic, agenda, actually...\n\nTürkçeye benziyorlar ama anlamları başka. Sympathetic “sempatik” değil, “anlayışlı” demek.\n\nDoğruları kaydırmalı kartlarda. Sen hangisini yanlış biliyordun?",
+  "carousel": [
+   "medya:v3/c04-yalanci/01.jpg",
+   "medya:v3/c04-yalanci/02.jpg",
+   "medya:v3/c04-yalanci/03.jpg",
+   "medya:v3/c04-yalanci/04.jpg",
+   "medya:v3/c04-yalanci/05.jpg",
+   "medya:v3/c04-yalanci/06.jpg",
+   "medya:v3/c04-yalanci/07.jpg",
+   "medya:v3/c04-yalanci/08.jpg",
+   "medya:v3/c04-yalanci/09.jpg",
+   "medya:v3/c04-yalanci/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Bu 5 kelimesandığın anlamda değil",
+   "She was very sympathetic. (Çok anlayışlıydı. (Sempatik değil!))",
+   "What's on the agenda? (Gündemde ne var? (Ajanda değil!))",
+   "Actually, I'm from Izmir. (Aslında İzmirliyim. (Aktüel değil!))",
+   "That's a sensible plan. (Mantıklı bir plan. (Hassas değil!))",
+   "The car is in good condition. (Araba iyi durumda. (Kondisyon değil!))",
+   "Mini test: Sempatik birini anlatıyorsun:",
+   "Cevap: He's likeable.",
+   "Özet: She was very sympathetic. · What's on the agenda? · Actually, I'm from Izmir. · That's a sensible plan. · The car is in good condition.",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c04-yalanci"
  },
  {
-  "n": 171,
+  "n": 402,
   "date": "2026-12-01",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Boşluk doldurma zamanı 🧩\n\nArkadaşın hafta sonu planını soruyor, sen cevap veriyorsun:\n“I'm thinking ___ going to the beach.”\n\nA) to\nB) of\nC) about\n\nBoşluğa hangisi gelir? Yorumlara yaz, cevabı ilk yorumda açıklıyoruz 👇",
-  "reply": "Burada iki doğru var: B ve C ✅ “I'm thinking of going...” ve “I'm thinking about going...” = ...gitmeyi düşünüyorum. İkisi de çok doğal. “to” ise olmaz ❌ çünkü “think” bu anlamda of ya da about ile kullanılır, arkasından da -ing gelir.",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Bu cümlede 1 hata var:\n“I am agree with you.”\n\nBulabildin mi? Önce doğrusunu yorumlara yaz, sonra kontrol et.\nDoğrusu: I agree with you. Agree zaten fiil, önüne am/is/are gelmez.\n\nTürkçedeki “katılıyorum” kalıbı yüzünden çok yapılıyor. Sen de böyle diyor muydun?",
+  "video": "medya:v3/r03-hata-agree.mp4",
+  "fallback_img": "medya:v3/r03-hata-agree.jpg",
+  "alt": "Goof'lu animasyon: “I am agree” hatası düzeltilip “I agree with you” oluyor.",
+  "spoiler": [
+   "I agree with you. Agree zaten fiil, önüne am/is/are gelmez."
+  ],
+  "src": "r03-hata-agree",
+  "reply": "LINGOOF'ta hata yap, Goof nedenini Türkçe açıklasın. A1'den C1'e dersler, ilk dersler ücretsiz 💜 {LINK}"
  },
  {
   "n": 172,
@@ -2551,37 +2545,24 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Sabah kapıdan çıktın, soğuk yüzüne çarptı. Komşun da tam o an çıkıyor. En kolay açılış: hava!\n\n🥶 “It's freezing today!” = Bugün buz gibi!\n☀️ Güneşli bir günde: “What a lovely day!” = Ne güzel bir gün!\n\nİkisi de soru değil ama karşındakine cevap verecek bir kapı aralıyor.\n\nHava muhabbetinden sonra sıra kahvede: LINGOOF'ta barista Goof soruyor, “Hey! What can I get for you?” Cevap senden ☕\n👉 {LINK}",
-  "reply": null,
+  "text": "Sabah kapıdan çıktın, soğuk yüzüne çarptı. Komşun da tam o an çıkıyor. En kolay açılış: hava!\n\n🥶 “It's freezing today!” = Bugün buz gibi!\n☀️ Güneşli bir günde: “What a lovely day!” = Ne güzel bir gün!\n\nİkisi de soru değil ama karşındakine cevap verecek bir kapı aralıyor.",
+  "reply": "Hava muhabbetinden sonra sıra kahvede: LINGOOF'ta barista Goof soruyor, “Hey! What can I get for you?” Cevap senden ☕\n👉 {LINK}",
   "topic": "İngilizce"
  },
  {
-  "n": 328,
-  "date": "2026-12-02",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nscarf (skarf)\n= atkı, şal\n\n“Don't forget your scarf. It's cold outside!”\n= Atkını unutma, dışarısı soğuk!\n\n✍️ Kışın vazgeçilmezin ne? “In winter, I can't live without my...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Çoğulu genelde “scarves” (skarvz). Aynı kural: knife → knives, leaf → leaves 🧣",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 175,
+  "n": 403,
   "date": "2026-12-02",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Bugün su kaynıyor",
-   "Bugün çok sıcak",
-   "Bugün çok yağmurlu"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Dersten sonra arkadaşına yazıyorsun: “Çok sıkıldım.”\n\nA) I'm bored.\nB) I'm boring.\n\nHangisi? Cevap: A. “I'm boring” dersen “Ben sıkıcı biriyim” demiş olursun.\n\nKural kısa: -ed hisseden, -ing hissettiren. bored/boring, tired/tiring, interested/interesting. Bu hafta neye “so boring” dedin?",
+  "video": "medya:v3/r04-quiz-bored.mp4",
+  "fallback_img": "medya:v3/r04-quiz-bored.jpg",
+  "alt": "Goof'lu mini test: “I'm bored” mu “I'm boring” mi?",
+  "spoiler": [
+   "A. “I'm boring” dersen “Ben sıkıcı biriyim” demiş olursun."
   ],
-  "text": "Londra'dan gelen arkadaşın kapıdan girer girmez şöyle diyor 🥵\n“It's boiling today!”\n\nNe demek istiyor? Oyunu ver, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap: “Bugün çok sıcak” ✅\n\n“boiling” kelimesi kelimesine “kaynıyor” ama burada bir abartı var: Bugün fırın gibi! Sabahki “freezing”in tam tersi.",
-  "topic": "İngilizce Öğren"
+  "src": "r04-quiz-bored"
  },
  {
   "n": 176,
@@ -2620,28 +2601,53 @@
   "topic": "İngilizce"
  },
  {
-  "n": 329,
+  "n": 451,
   "date": "2026-12-03",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncompliment (KOM-pli-mınt)\n= iltifat\n\n“Thanks for the compliment!”\n= İltifatın için teşekkürler!\n\n✍️ Aldığın en güzel iltifat neydi? “The best compliment I ever got was...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Dikkat: “complement” (tamamlamak) de aynı okunur ama farklı yazılır. Sihirli kalıp: “That's so kind of you!” = Çok naziksin! 💐",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce Konuşma",
+  "text": "Erasmus'ta ilk hafta: bu 5 cümle seni kurtarır.\n\nKampüste, yurtta, kafede ilk günden lazım olacak cümleler ve gelecek cevaplar kartlarda.\n\nErasmus'a giden ya da gidecek biri var mı çevrende? Ona gönder, ilk hafta işine yarar.",
+  "carousel": [
+   "medya:v3/c02-erasmus/01.jpg",
+   "medya:v3/c02-erasmus/02.jpg",
+   "medya:v3/c02-erasmus/03.jpg",
+   "medya:v3/c02-erasmus/04.jpg",
+   "medya:v3/c02-erasmus/05.jpg",
+   "medya:v3/c02-erasmus/06.jpg",
+   "medya:v3/c02-erasmus/07.jpg",
+   "medya:v3/c02-erasmus/08.jpg",
+   "medya:v3/c02-erasmus/09.jpg",
+   "medya:v3/c02-erasmus/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Erasmus'ta ilk hafta:bu 5 cümle seni kurtarır",
+   "Where do I get my student card? (Öğrenci kartımı nereden alırım?)",
+   "Is this seat taken? (Bu koltuk boş mu?)",
+   "Sorry, could you say that again? (Pardon, tekrar söyler misin?)",
+   "How does the laundry work here? (Çamaşırhane nasıl çalışıyor?)",
+   "Wanna grab a coffee later? (Sonra kahve içelim mi?)",
+   "Mini test: Hocayı anlamadın.Hangisini dersin?",
+   "Cevap: Sorry, could you say that again?",
+   "Özet: Where do I get my student card? · Is this seat taken? · Sorry, could you say that again? · How does the laundry work here? · Wanna grab a coffee later?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c02-erasmus"
  },
  {
-  "n": 179,
+  "n": 404,
   "date": "2026-12-03",
   "time": "13:00",
-  "series": "Hata Avı",
-  "cta": true,
-  "img": null,
-  "poll": null,
-  "text": "Arkadaşın: “Happy birthday!”\nSen, otomatik pilotta: “Thank you, you too!”\n...ve bir saniyelik sessizlik 😅\n\nOnun doğum günü değil ki! Refleks güçlü ama burada “you too” komik kaçıyor.\n\n❌ “Thank you, you too!”\n✅ “Thank you so much!” = Çok teşekkür ederim!\n✅ “Thanks, that's really sweet!” = Çok tatlısın, teşekkürler!\n\nSen de hiç bu refleksin kurbanı oldun mu?",
-  "reply": "Bonus 🎂 Doğum gününde gelen mesajlara toplu teşekkür etmek istersen:\n“Thank you all for the birthday wishes!”\n= Doğum günü mesajlarınız için hepinize teşekkürler!\n\nRefleksi doğru kalıpla değiştirmenin yolu sesli tekrar: LINGOOF'ta Goof'la konuş 🎙️\n{LINK}",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Uygulamadan bir sahne. Boşluğu doldur:\n“I relax ___ the evening.”\nin / at / on\n\nSeçtin mi? Cevap: in. Saatte at, günde on, günün bölümünde in: in the morning, in the evening. Ama at night!\n\nLINGOOF'ta yanlış şıkkı seçince Goof nedenini Türkçe açıklıyor. Hata yap, düzelt, devam et.",
+  "video": "medya:v3/r05-urun-evening.mp4",
+  "fallback_img": "medya:v3/r05-urun-evening.jpg",
+  "alt": "LINGOOF uygulamasından sahne: yanlış şık seçilince Goof Türkçe açıklıyor.",
+  "spoiler": [
+   "in. Saatte at, günde on, günün bölümünde in: in the morning, in the evening. Ama at night!"
+  ],
+  "src": "r05-urun-evening",
+  "reply": "Her şık için Türkçe açıklama ve Goof'la sesli prova: LINGOOF'u ücretsiz indir 👉 {LINK}"
  },
  {
   "n": 180,
@@ -2680,32 +2686,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 330,
-  "date": "2026-12-04",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nhobby (HO-bi)\n= hobi, uğraş\n\n“Painting is my favorite hobby.”\n= Resim yapmak en sevdiğim hobi.\n\n✍️ Senin hobin ne? “In my free time, I like to...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Sohbette “What are your hobbies?” yerine daha doğal: “What do you do for fun?” = Eğlenmek için neler yaparsın? 🎨",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 183,
+  "n": 405,
   "date": "2026-12-04",
   "time": "13:00",
-  "series": "Anket",
-  "cta": true,
-  "img": null,
-  "poll": [
-   "I'm cooking now.",
-   "I'm a teacher.",
-   "I do fine."
-  ],
-  "text": "Bir partidesin 🎉 Yeni tanıştığın biri soruyor: “What do you do?”\n\nHangisi doğru cevap? Oyunu ver, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap: “I'm a teacher.” ✅ “What do you do?” mesleğini sorar = Ne iş yapıyorsun?\n\n“I'm cooking now.”, “What are you doing?” sorusunun cevabı olurdu. “I do fine.” doğal değil; “I'm doing fine.” ise “How are you doing?” sorusuna verilir.\n\nYazmak kolay, sesli söylemek ayrı iş 😄 LINGOOF'ta Goof'a dokun, “Konuş”u seç 🎙️\n{LINK}",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Vedalaşırken Türk usulü vs native:\n\n“Görüşürüz” → We will see! ❌ See you! ✅\n“Kendine iyi bak” → Look at yourself! ❌ Take care! ✅\n“Sağ ol” → Be alive! ❌ Thanks! ✅\n\n“Look at yourself” dersen karşındaki aynaya bakmaya gider 😄 Hangisini daha önce duymuştun?",
+  "video": "medya:v3/r06-vs-veda.mp4",
+  "fallback_img": "medya:v3/r06-vs-veda.jpg",
+  "alt": "Goof'lu animasyon: vedalaşmada kelimesi kelimesine çeviriler ve doğal karşılıkları.",
+  "src": "r06-vs-veda"
  },
  {
   "n": 184,
@@ -2744,28 +2734,52 @@
   "topic": "İngilizce"
  },
  {
-  "n": 331,
+  "n": 452,
   "date": "2026-12-05",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nawkward (OK-vırd)\n= garip, tuhaf, utandırıcı\n\n“That moment was so awkward!”\n= O an çok tuhaftı!\n\n✍️ En awkward anını anlat, söz gülmeyeceğiz 😅 “The most awkward moment was when...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Konuşmada “awkward silence” = herkesin sustuğu o garip sessizlik. Kurtarıcı cümle: “So... how was your week?” 😬",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Havalimanında bu 5 cümle yeter ✈️\n\nCheck-in'den kapıya kadar gerçek cümleler ve gelecek cevaplar kartlarda. Küçük not: biniş kapısı gate, door değil.\n\nKaydet, bir sonraki yolculukta lazım olur. Sen en son nereye uçtun?",
+  "carousel": [
+   "medya:v3/c03-havalimani/01.jpg",
+   "medya:v3/c03-havalimani/02.jpg",
+   "medya:v3/c03-havalimani/03.jpg",
+   "medya:v3/c03-havalimani/04.jpg",
+   "medya:v3/c03-havalimani/05.jpg",
+   "medya:v3/c03-havalimani/06.jpg",
+   "medya:v3/c03-havalimani/07.jpg",
+   "medya:v3/c03-havalimani/08.jpg",
+   "medya:v3/c03-havalimani/09.jpg",
+   "medya:v3/c03-havalimani/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Havalimanındabu 5 cümle yeter",
+   "Is this the line for check-in? (Check-in sırası bu mu?)",
+   "Could I have a window seat? (Cam kenarı alabilir miyim?)",
+   "How many bags can I check in? (Kaç bavul verebilirim?)",
+   "Which gate is my flight? (Uçağım hangi kapıdan?)",
+   "My bag didn't arrive. (Bavulum gelmedi.)",
+   "Mini test: Uçağa biniş kapısı:",
+   "Cevap: gate",
+   "Özet: Is this the line for check-in? · Could I have a window seat? · How many bags can I check in? · Which gate is my flight? · My bag didn't arrive.",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c03-havalimani"
  },
  {
-  "n": 187,
+  "n": 406,
   "date": "2026-12-05",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Bu soru, dil meraklıları arasında bile tartışma çıkarır 👀\n\nBiri sana “How are you?” diye sordu. Hangisi doğru?\n\nA) I'm good, thanks.\nB) I'm well, thanks.\nC) İkisi de doğru.\n\nTahminini yorumlara bırak, cevap ilk yorumda 👇",
-  "reply": "Doğru cevap C ✅ Günlük konuşmada ikisi de tamamen doğal.\n“I'm good” daha rahat ve yaygın, “I'm well” biraz daha resmî.\nBonus: “I'm good, thanks!” bazen “Gerek yok, sağ ol.” demek: “More coffee?” – “I'm good, thanks!” 😄",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Londra'da bir restorandasın. Garson soruyor: “Anything else?”\n\nHesabı isteyeceksin. “Give me the account” mı dersin?\n\nDoğal hali: No, thanks. Could we get the bill? Hesap account değil: İngiltere'de the bill, ABD'de the check.\n\nYurt dışındaki ilk restoran deneyimin nasıldı?",
+  "video": "medya:v3/r07-pov-bill.mp4",
+  "fallback_img": "medya:v3/r07-pov-bill.jpg",
+  "alt": "Goof'lu sahne: garsona “Could we get the bill?” demek.",
+  "spoiler": [
+   "No, thanks. Could we get the bill? Hesap account değil: İngiltere'de the bill, ABD'de the check."
+  ],
+  "src": "r07-pov-bill"
  },
  {
   "n": 188,
@@ -2775,7 +2789,7 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Evde tek başına İngilizce konuşma pratiği nasıl yapılır? 5 küçük adım 🏠\n\n1. Gününü 1 dakika boyunca İngilizce anlat.\n2. Gördüğün üç eşyayı İngilizce tarif et.\n3. Duyduğun bir cümleyi gölge gibi tekrar et (shadowing).\n4. Kendine bir soru sor, sesli cevap ver: “What did you do today?”\n5. Yarın aynı saatte tekrarla.\n\nGünde 5 dakika yeter. Mükemmel olmasın, sesli olsun 💜 Kaydet 🔖",
+  "text": "Evde tek başına İngilizce konuşma pratiği nasıl yapılır? 5 küçük adım 🏠\n\n1. Gününü 1 dakika boyunca İngilizce anlat.\n2. Gördüğün üç eşyayı İngilizce tarif et.\n3. Duyduğun bir cümleyi gölge gibi tekrar et (shadowing).\n4. Kendine bir soru sor, sesli cevap ver: “What did you do today?”\n5. Yarın aynı saatte tekrarla.\n\nKısa olsun ama her gün olsun. Mükemmel olmasın, sesli olsun 💜 Kaydet 🔖",
   "reply": "Konuşacak birini arıyorsan Goof hazır: LINGOOF'ta Goof'a dokun, “Ne yapalım?” diye sorunca “Konuş”u seç 🎙️\n{LINK}",
   "topic": "İngilizce Konuşma"
  },
@@ -2785,7 +2799,6 @@
   "time": "21:00",
   "series": "Goof'un Günlüğü",
   "cta": false,
-  "img": "08_Ortakoy.jpg",
   "poll": null,
   "text": "Goof'un günlüğü 💜 Ortaköy'den gece notu\n\nElimde kocaman bir kumpir, sahildeyim. Arkada cami ışıl ışıl, köprü renk renk 🌉\n\nYanımdaki turiste döndüm ve dedim ki:\n“Beautiful night, isn't it?”\n= Ne güzel bir gece, değil mi?\n\nSondaki “isn't it?” (tag question) küçük bir davet: Karşındaki onaylar, sohbet başlar. Turist “It really is!” dedi, on dakika sonra kumpirimi paylaşıyordum 😄\n\nSen olsan sohbeti nasıl sürdürürdün?",
   "reply": null,
@@ -2804,28 +2817,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 332,
-  "date": "2026-12-06",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nhometown (HOUM-taun)\n= memleket, doğup büyüdüğün şehir\n\n“My hometown is famous for its food.”\n= Memleketim yemekleriyle meşhurdur.\n\n✍️ Memleketin neresi, neyle meşhur? “My hometown is... It's famous for...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Soru hâli: “Where are you from originally?” = Aslen nerelisin? 🏡",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 191,
+  "n": 407,
   "date": "2026-12-06",
   "time": "13:00",
-  "series": "Sen Olsan?",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Asansöre bindin. Yanında tanımadığın biri var. Önünüzde 20 saniye ve o garip sessizlik... 🛗\n\nİlk cümlen ne olurdu?\n\nCevabını yorumlara İngilizce yaz. Kısa olsun, kusursuz olması gerekmiyor 💜\n\nMini bonus: asansör = “elevator” (İngiltere'de “lift”)",
-  "reply": "Bizim cevabımız 👇\n“Hi! Which floor?” = Merhaba! Kaçıncı kat?\nDüğmelerin önündeysen en doğal açılış bu.\n\nBiraz espri istersen:\n“Is it just me, or is this elevator really slow?” 😄\n= Bana mı öyle geliyor, yoksa bu asansör çok mu yavaş?",
-  "topic": "İngilizce Konuşma"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Hata yaparken hata yapma:\n“I did a mistake.”\n\nDoğrusu ne? Cevap: I made a mistake. Hata yapmak make a mistake, do değil.\n\nmake ile gidenler: make a decision, make friends, make a plan. Burada hata yapmak serbest: en son hangi İngilizce hatanı fark ettin? 💜",
+  "video": "medya:v3/r08-hata-mistake.mp4",
+  "fallback_img": "medya:v3/r08-hata-mistake.jpg",
+  "alt": "Goof'lu animasyon: “I did a mistake” düzeltilip “I made a mistake” oluyor.",
+  "spoiler": [
+   "I made a mistake. Hata yapmak make a mistake, do değil."
+  ],
+  "src": "r08-hata-mistake"
  },
  {
   "n": 192,
@@ -2845,12 +2849,34 @@
   "time": "21:00",
   "series": "Haftanın Özeti",
   "cta": true,
-  "img": "card_smalltalk.jpg",
   "poll": null,
-  "text": "Small talk haftasının özeti: Sohbet açmak için 7 hazır İngilizce cümle ☕\n\nKaydet 🔖 Asansörde, kahve sırasında, toplantı başlamadan önce...\n\nBu haftanın sesli görevini yaptıysan yorumlara ✅ bırak 💜",
+  "text": "Small talk haftasının özeti ☕ Sohbeti tıkanmadan sürdürmek için 5 soru, doğal cevapları ve sonunda mini bir test.\n\nKaydet 🔖 Asansörde, kahve sırasında, toplantı başlamadan önce lazım olur.\n\nSmall talk'ta en çok nerede tıkanıyorsun: açarken mi, sürdürürken mi?",
   "reply": "Hepsini LINGOOF'ta Goof'la, gerçek hayat sahnelerinde sesli dene 🎙️\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. Small talk için 7 hazır cümle ☕. How's it going? (Nasıl gidiyor?); Any plans for the weekend? (Hafta sonu planın var mı?); It's freezing today! (Hava buz gibi!); I love your jacket! (Ceketine bayıldım!); What do you do? (Ne iş yapıyorsun?); Long time no see! (Görüşmeyeli çok oldu!); Small world! (Dünya küçük!).",
-  "topic": "İngilizce"
+  "topic": "İngilizce",
+  "carousel": [
+   "medya:v3/c05-smalltalk/01.jpg",
+   "medya:v3/c05-smalltalk/02.jpg",
+   "medya:v3/c05-smalltalk/03.jpg",
+   "medya:v3/c05-smalltalk/04.jpg",
+   "medya:v3/c05-smalltalk/05.jpg",
+   "medya:v3/c05-smalltalk/06.jpg",
+   "medya:v3/c05-smalltalk/07.jpg",
+   "medya:v3/c05-smalltalk/08.jpg",
+   "medya:v3/c05-smalltalk/09.jpg",
+   "medya:v3/c05-smalltalk/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Sohbetitıkanmadan sürdür",
+   "How's it going? (Nasıl gidiyor?)",
+   "Any plans for the weekend? (Hafta sonu için plan var mı?)",
+   "What do you do? (Ne iş yapıyorsun?)",
+   "Where are you from? (Nerelisin?)",
+   "It was nice chatting with you! (Seninle sohbet etmek güzeldi!)",
+   "Mini test: ‘What do you do?’ ne sorar?",
+   "Cevap: Ne iş yapıyorsun?",
+   "Özet: How's it going? · Any plans for the weekend? · What do you do? · Where are you from? · It was nice chatting with you!",
+   "Kaydet, gönder, yorum yap"
+  ]
  },
  {
   "n": 194,
@@ -2865,32 +2891,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 333,
-  "date": "2026-12-07",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncold feet (kould FİİT)\n= son anda cesaretini kaybetmek\n\n“He got cold feet before the wedding.”\n= Düğünden önce son anda cesaretini kaybetti.\n\n✍️ Son anda vazgeçtiğin bir şey oldu mu? “I got cold feet when...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Kalıp hep “get cold feet” şeklinde kullanılır. Ayakların gerçekten üşüdüyse: “My feet are cold.” 😄🦶",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 195,
+  "n": 408,
   "date": "2026-12-07",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Bir dilim pasta",
-   "Çok kolay",
-   "Pasta yedim"
-  ],
-  "text": "Sınava girmeden önce arkadaşın gülümseyip diyor ki 🍰\n“It's a piece of cake.”\n\nNe demek istiyor? Oyunu ver, doğru cevap ilk yorumda 👇",
-  "reply": "Doğru cevap: “Çok kolay” ✅ “It's a piece of cake.” = Çok kolay, çocuk oyuncağı.\n\nSınav, tarif, oyun... kolay olan her şey için kullanılır. Kısaca “Piece of cake!” de denir 😄",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Geçmiş olsun” İngilizcede nasıl denir?\n\n“Let it be past!” değil 😄 Duruma göre:\nHasta birine: Get well soon!\nMesajla yazarken: Hope you feel better!\nKötü bir habere: Sorry to hear that!\n\nGrip mevsimindeyiz. Bu hafta kime “Get well soon!” yazman gerekti?",
+  "video": "medya:v3/r09-nasil-gecmisolsun.mp4",
+  "fallback_img": "medya:v3/r09-nasil-gecmisolsun.jpg",
+  "alt": "Goof'lu animasyon: “Geçmiş olsun” için üç İngilizce karşılık.",
+  "src": "r09-nasil-gecmisolsun"
  },
  {
   "n": 196,
@@ -2900,8 +2910,8 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Goof soruyor 🎙️ Bu kez deyimli!\n\n“What always makes your day?”\n= Gününü hep ne güzelleştirir?\n\n“make someone's day” = birinin gününü güzelleştirmek\nBiri seni sevindirince: “You made my day!” = Günümü güzelleştirdin!\n\nİstersen şöyle başla: “It always makes my day when...”\n\nİngilizce cevabını yoruma yaz. Yüksek sesle denemek istersen Goof da LINGOOF'ta seni bekliyor, indirmesi ücretsiz 💜\n👉 {LINK}",
-  "reply": "Benimki çok basit 🌊\n“A sunny walk by the sea makes my day!”\n= Deniz kenarında güneşli bir yürüyüş günümü güzelleştirir!\nBir de elimde simit varsa değmeyin keyfime 😄",
+  "text": "Goof soruyor 🎙️ Bu kez deyimli!\n\n“What always makes your day?”\n= Gününü hep ne güzelleştirir?\n\n“make someone's day” = birinin gününü güzelleştirmek\nBiri seni sevindirince: “You made my day!” = Günümü güzelleştirdin!\n\nİstersen şöyle başla: “It always makes my day when...”\n\nİngilizce cevabını yoruma yaz.",
+  "reply": "Benimki çok basit 🌊\n“A sunny walk by the sea makes my day!”\n= Deniz kenarında güneşli bir yürüyüş günümü güzelleştirir!\nBir de elimde simit varsa değmeyin keyfime 😄\n\nYüksek sesle denemek istersen Goof da LINGOOF'ta seni bekliyor, indirmesi ücretsiz 💜\n👉 {LINK}",
   "topic": "İngilizce Konuşma"
  },
  {
@@ -2912,7 +2922,7 @@
   "cta": false,
   "img": null,
   "poll": null,
-  "text": "Haftanın sesli görevi 🙌 İyi haber: Bazı İngilizce deyimleri zaten biliyorsun, çünkü Türkçede de birebir aynılar.\n\n“kill two birds with one stone” = bir taşla iki kuş vurmak\n“Time is money.” = Vakit nakittir.\n“break the ice” = buzları kırmak (bu sabahki deyimimiz!)\n\nGörev: Bu hafta her gün birini gün içinde bir kez yüksek sesle kullan. Ezberlemene gerek yok, söylemeye alışman yeter.\n\nYaptığın gün yorumlara ✅ Aklına başka “ikiz deyim” geliyor mu?",
+  "text": "Haftanın sesli görevi 🙌 İyi haber: Bazı İngilizce deyimleri zaten biliyorsun, çünkü Türkçede de birebir aynılar.\n\n“kill two birds with one stone” = bir taşla iki kuş vurmak\n“Time is money.” = Vakit nakittir.\n“break the ice” = buzları kırmak (bu sabahki deyimimiz!)\n\nGörev: Bu hafta her gün birini gün içinde bir kez yüksek sesle kullan. Ezberlemene gerek yok, söylemeye alışman yeter.\n\nAklına başka “ikiz deyim” geliyor mu?",
   "reply": null,
   "topic": "İngilizce Konuşma"
  },
@@ -2929,28 +2939,50 @@
   "topic": "İngilizce"
  },
  {
-  "n": 334,
+  "n": 453,
   "date": "2026-12-08",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\non cloud nine (on klaud NAYN)\n= havalara uçmak, çok mutlu olmak\n\n“I've been on cloud nine since I got the news.”\n= Haberi aldığımdan beri havalara uçuyorum.\n\n✍️ Seni en son ne havalara uçurdu? “I was on cloud nine when...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Benzer anlamda: “over the moon” = aşırı mutlu. “She was over the moon about her new job.” ☁️",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Otelde bu 5 cümle yeter: girişten çıkışa, kibar ve doğal 🛎️\n\nRezervasyon, kahvaltı saati, Wi-Fi şifresi, bozuk klima... Hepsi kartlarda, gelecek cevaplarıyla.\n\nOtelde en çok neyi sormakta zorlanıyorsun?",
+  "carousel": [
+   "medya:v3/c06-otel/01.jpg",
+   "medya:v3/c06-otel/02.jpg",
+   "medya:v3/c06-otel/03.jpg",
+   "medya:v3/c06-otel/04.jpg",
+   "medya:v3/c06-otel/05.jpg",
+   "medya:v3/c06-otel/06.jpg",
+   "medya:v3/c06-otel/07.jpg",
+   "medya:v3/c06-otel/08.jpg",
+   "medya:v3/c06-otel/09.jpg",
+   "medya:v3/c06-otel/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Oteldebu 5 cümle yeter",
+   "I have a reservation under Yılmaz. (Yılmaz adına rezervasyonum var.)",
+   "What time is breakfast? (Kahvaltı saat kaçta?)",
+   "What's the Wi-Fi password? (Wi-Fi şifresi ne?)",
+   "The air conditioning isn't working. (Klima çalışmıyor.)",
+   "Could I leave my bags here? (Çantalarımı burada bırakabilir miyim?)",
+   "Mini test: Otelden ayrılırken:",
+   "Cevap: I'd like to check out.",
+   "Özet: I have a reservation under Yılmaz. · What time is breakfast? · What's the Wi-Fi password? · The air conditioning isn't working. · Could I leave my bags here?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c06-otel"
  },
  {
-  "n": 199,
+  "n": 409,
   "date": "2026-12-08",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Boşluğu doldur ✍️\n\nTürkçede “kırk yıl”, İngilizcede “mavi” bir şey. İkisi de “çok nadir” demek 😄\n\n“I only see my cousins once in a blue ___.”\n= Kuzenlerimi kırk yılda bir görüyorum.\n\nA) sky\nB) moon\nC) sea\n\nHarfi ya da kelimeyi yaz, cevap ilk yorumda 👇",
-  "reply": "Doğru cevap B ✅ “once in a blue moon” = kırk yılda bir, çok nadiren.\nBir takvim ayına düşen ikinci dolunaya da “blue moon” denir ve ortalama iki üç yılda bir olur. Yani gerçekten nadir 🌕",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "İngiliz arkadaşın seni görünce soruyor: “You alright?”\n\nHasta mı görünüyorsun? Hayır, İngiltere'de bu sadece bir selam.\nDoğal cevap: Yeah, good thanks! You?\n\n“No, I'm not sick!” dersen ikiniz de şaşırırsınız 😄 Sen hangi selamı ilk duyduğunda yanlış anlamıştın?",
+  "video": "medya:v3/r10-pov-alright.mp4",
+  "fallback_img": "medya:v3/r10-pov-alright.jpg",
+  "alt": "Goof'lu sahne: “You alright?” bir selamdır, doğal cevabı “Yeah, good thanks! You?”",
+  "src": "r10-pov-alright",
+  "reply": "Bu sahneyi LINGOOF'ta Goof'la sesli prova edebilirsin: Goof Talk AI'da sen konuşursun, Goof cevap verir 🎙️ Ücretsiz indir: {LINK}"
  },
  {
   "n": 200,
@@ -2970,7 +3002,6 @@
   "time": "21:00",
   "series": "Goof'un Günlüğü",
   "cta": false,
-  "img": "12_Uzungol.jpg",
   "poll": null,
   "text": "Goof'un günlüğü 💜 Uzungöl'de sisli bir sabah\n\nGöl kenarında bir turist gökyüzüne bakıp “It's raining cats and dogs!” dedi. Ben de yarım saat kedi aradım 🙈 Tek bir kedi yağmadı, sadece sağanak!\n\nSonra ahşap bir evin önüne oturdum, elimde sıcak bir çay. Sis dağlardan yavaş yavaş iniyordu. İçimden şu geçti:\n“It's so peaceful here.”\n= Burası çok huzurlu.\n\nSenin huzur bulduğun yer neresi?",
   "reply": null,
@@ -2984,33 +3015,24 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "İki dil, aynı baklagil 😄\n\n“spill the beans”\n= baklayı ağzından çıkarmak, sırrı açmak\n\nİngilizcede fasulyeler dökülüyor, Türkçede bakla ağızdan çıkıyor. Anlam aynı: Saklanan şey artık ortada!\n\n“Come on, spill the beans! What's the surprise?”\n= Hadi, çıkar baklayı ağzından! Sürpriz ne?\n\nDeyimi bir de sesli söyle. LINGOOF'ta Goof'la konuşurken ekranda “Sıra sende · acele yok” yazar 💜\n👉 {LINK}",
-  "reply": null,
+  "text": "İki dil, aynı baklagil 😄\n\n“spill the beans”\n= baklayı ağzından çıkarmak, sırrı açmak\n\nİngilizcede fasulyeler dökülüyor, Türkçede bakla ağızdan çıkıyor. Anlam aynı: Saklanan şey artık ortada!\n\n“Come on, spill the beans! What's the surprise?”\n= Hadi, çıkar baklayı ağzından! Sürpriz ne?",
+  "reply": "Deyimi bir de sesli söyle. LINGOOF'ta Goof'la konuşurken ekranda “Sıra sende · acele yok” yazar 💜\n👉 {LINK}",
   "topic": "İngilizce"
  },
  {
-  "n": 335,
-  "date": "2026-12-09",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nbookworm (BUK-vörm)\n= kitap kurdu\n\n“My sister is a real bookworm.”\n= Kız kardeşim tam bir kitap kurdu.\n\n✍️ Okuduğun son kitap? “The last book I read was...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Türkçeyle birebir aynı mantık: book (kitap) + worm (kurt). Bu ayın kitap önerin varsa yorumlara bırak 📖",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 203,
+  "n": 410,
   "date": "2026-12-09",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Bir deyim, üç tahmin 🧩\n\nGoof bir şeye bakıp derin bir iç çekti:\n“It costs an arm and a leg.”\n\nSence ne demek istiyor?\n\nA) Kol bacak ağrıtıyor\nB) Çok pahalı / ateş pahası\nC) Çok uzak\n\nHangisi? Yaz bakalım, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap B ✅ “It costs an arm and a leg.” = Ateş pahası, çok pahalı.\nÖrnek: “My new phone cost an arm and a leg.”\nDikkat: “cost” fiilinin geçmiş zaman biçimi de “cost” 😉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Yemekte tuzu istiyorsun. Hangisi daha kibar?\n\nA) Give me the salt.\nB) Could you pass the salt?\n\nCevap: B. Emir kipi İngilizcede sert duyulur, ricada Could you…? kullanılır.\n\nTürkçede “Tuzu versene” gayet normal. Sence İngilizcede neden kaba kaçıyor?",
+  "video": "medya:v3/r11-quiz-salt.mp4",
+  "fallback_img": "medya:v3/r11-quiz-salt.jpg",
+  "alt": "Goof'lu mini test: hangisi daha kibar, “Give me the salt” mı “Could you pass the salt?” mı?",
+  "spoiler": [
+   "B. Emir kipi İngilizcede sert duyulur, ricada Could you…? kullanılır."
+  ],
+  "src": "r11-quiz-salt"
  },
  {
   "n": 204,
@@ -3049,33 +3071,53 @@
   "topic": "İngilizce"
  },
  {
-  "n": 336,
+  "n": 454,
   "date": "2026-12-10",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nnight owl (nayt AUL)\n= gece kuşu\n\n“I'm a night owl. I work best after midnight.”\n= Ben gece kuşuyum, en iyi gece yarısından sonra çalışırım.\n\n✍️ Sen hangisisin: night owl mı, early bird mü? “I'm a/an... because...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Sabahçıların deyimi: “The early bird catches the worm.” = Erken kalkan yol alır 🦉🐦",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "Her gün duyacağın 5 phrasal verb: figure out, run out of, look forward to, put off ve bir tane daha.\n\nDizilerde, işte, sohbette. Örnek cümleleri ve kısa ipuçları kartlarda.\n\nSen en çok hangisini duyuyorsun?",
+  "carousel": [
+   "medya:v3/c07-phrasal/01.jpg",
+   "medya:v3/c07-phrasal/02.jpg",
+   "medya:v3/c07-phrasal/03.jpg",
+   "medya:v3/c07-phrasal/04.jpg",
+   "medya:v3/c07-phrasal/05.jpg",
+   "medya:v3/c07-phrasal/06.jpg",
+   "medya:v3/c07-phrasal/07.jpg",
+   "medya:v3/c07-phrasal/08.jpg",
+   "medya:v3/c07-phrasal/09.jpg",
+   "medya:v3/c07-phrasal/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Her gün duyacağın5 phrasal verb",
+   "I can't figure it out. (Bir türlü çözemiyorum.)",
+   "We ran out of milk. (Sütümüz bitti.)",
+   "I'm looking forward to it! (Dört gözle bekliyorum!)",
+   "Don't put it off! (Erteleme!)",
+   "Let's catch up soon! (Yakında görüşüp hasret giderelim!)",
+   "Mini test: ‘Benzinimiz bitti’:",
+   "Cevap: We ran out of gas.",
+   "Özet: I can't figure it out. · We ran out of milk. · I'm looking forward to it! · Don't put it off! · Let's catch up soon!",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c07-phrasal"
  },
  {
-  "n": 207,
+  "n": 411,
   "date": "2026-12-10",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Raining cats and dogs",
-   "When pigs fly",
-   "Spill the beans",
-   "Piece of cake"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Yaşını söylerken en sık yapılan hata:\n“I have 25 years old.”\n\nDoğrusu? Cevap: I am 25 years old. Ya da kısaca I'm 25. Yaş have ile değil be ile söylenir.\n\nTürkçedeki “25 yaşım var” mantığı bizi have'e itiyor. Sen kaç yaşında İngilizceye başlamıştın?",
+  "video": "medya:v3/r12-hata-age.mp4",
+  "fallback_img": "medya:v3/r12-hata-age.jpg",
+  "alt": "Goof'lu animasyon: “I have 25 years old” düzeltilip “I am 25 years old” oluyor.",
+  "spoiler": [
+   "I am 25 years old. Ya da kısaca I'm 25. Yaş have ile değil be ile söylenir."
   ],
-  "text": "Hafta yarılandı 🎉\n\nŞimdiye kadar İngilizce deyimlerin ne kadar tuhaf olabileceğini gördük 😄\n\nSence hangisi en komik?",
-  "reply": null,
-  "topic": "İngilizce Öğren"
+  "src": "r12-hata-age",
+  "reply": "LINGOOF'ta hata yap, Goof nedenini Türkçe açıklasın. A1'den C1'e dersler, ilk dersler ücretsiz 💜 {LINK}"
  },
  {
   "n": 208,
@@ -3114,28 +3156,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 337,
-  "date": "2026-12-11",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncram (krem)\n= sınavdan önce son dakika yüklenmek\n\n“I crammed all night for the exam.”\n= Sınav için bütün gece son dakika çalıştım.\n\n✍️ Sen son dakikacı mısın, planlı mı? “Before exams, I usually...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Asıl anlamı “tıkıştırmak”: “I crammed everything into one suitcase.” = Her şeyi tek valize tıkıştırdım 🧳",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 211,
+  "n": 412,
   "date": "2026-12-11",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": true,
-  "img": null,
-  "poll": null,
-  "text": "Eşleştirme zamanı 🧩\n\n1. “under the weather”\n2. “spill the beans”\n3. “hit the books”\n\na) sıkı ders çalışmak\nb) biraz hasta, keyifsiz olmak\nc) sırrı açmak\n\nCevabını “1-?, 2-?, 3-?” diye yaz, doğrular ilk yorumda 👇\n\nKısa adımlarla ilerlemeyi seviyorsan LINGOOF'ta Günün yolu seni bekliyor: birkaç adım, birkaç dakika 💜\n{LINK}",
-  "reply": "Doğrular ✅ 1-b, 2-c, 3-a\n“under the weather” = biraz keyifsiz, hafif hasta\n“spill the beans” = baklayı ağzından çıkarmak\n“hit the books” = derslere gömülmek\nKaç tanesini bildin? 😄",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Şaşırınca ne dersin?\n\n“Hadi ya!” → Come on ya! ❌ No way! ✅\n“Yok artık!” → No more! ❌ You're kidding! ✅\n“Aynen!” → Same same! ❌ Totally! ✅\n\nBizim favorimiz “No way!” 😄 Senin en çok kullandığın şaşırma kalıbı hangisi?",
+  "video": "medya:v3/r13-vs-sasirma.mp4",
+  "fallback_img": "medya:v3/r13-vs-sasirma.jpg",
+  "alt": "Goof'lu animasyon: şaşırınca kullanılan Türkçe kalıplar ve doğal İngilizce karşılıkları.",
+  "src": "r13-vs-sasirma"
  },
  {
   "n": 212,
@@ -3174,28 +3204,49 @@
   "topic": "İngilizce"
  },
  {
-  "n": 338,
+  "n": 455,
   "date": "2026-12-12",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nchatterbox (ÇE-tır-boks)\n= geveze, çenesi düşük\n\n“My best friend is such a chatterbox!”\n= En yakın arkadaşım tam bir geveze!\n\n✍️ Arkadaş grubunun chatterbox'ı kim? Etiketle 😄\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Fiil hâli “chatter” = durmadan konuşmak, cıvıldamak. Kuşlar için de kullanılır 🐦",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Restoranda bu 5 cümle yeter: masa iste, sipariş ver, hesabı öde 🍝\n\nSiparişte I want yerine Can I get…? Alerjin varsa nasıl sorarsın? Hepsi kartlarda.\n\nYurt dışında yediğin en güzel yemek neydi?",
+  "carousel": [
+   "medya:v3/c12-restoran/01.jpg",
+   "medya:v3/c12-restoran/02.jpg",
+   "medya:v3/c12-restoran/03.jpg",
+   "medya:v3/c12-restoran/04.jpg",
+   "medya:v3/c12-restoran/05.jpg",
+   "medya:v3/c12-restoran/06.jpg",
+   "medya:v3/c12-restoran/07.jpg",
+   "medya:v3/c12-restoran/08.jpg",
+   "medya:v3/c12-restoran/09.jpg",
+   "medya:v3/c12-restoran/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Restorandabu 5 cümle yeter",
+   "A table for two, please. (İki kişilik masa lütfen.)",
+   "What do you recommend? (Ne önerirsiniz?)",
+   "Can I get the pasta, please? (Makarnayı alabilir miyim?)",
+   "Does this have nuts in it? (Bunda fındık-fıstık var mı?)",
+   "Could we get the bill, please? (Hesabı alabilir miyiz?)",
+   "Mini test: Hesabı isterken:",
+   "Cevap: Could we get the bill?",
+   "Özet: A table for two, please. · What do you recommend? · Can I get the pasta, please? · Does this have nuts in it? · Could we get the bill, please?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c12-restoran"
  },
  {
-  "n": 215,
+  "n": 413,
   "date": "2026-12-12",
   "time": "13:00",
-  "series": "Hata Avı",
-  "cta": true,
-  "img": null,
-  "poll": null,
-  "text": "Kelimesi kelimesine çevirinin kurbanı olmayalım 😅\n\nSınav haftası, üç gündür uyumadın:\n“Kafayı yiyeceğim!”\n\n❌ “I'm going to eat the head!”\n✅ “I'm going to lose it!”\n✅ “I'm going crazy!”\n\nİngilizcede kafa yenmez; olsa olsa kontrol kaybedilir.\n\nSenin en sevdiğin çeviri faciası hangisi? Yorumlara yaz!",
-  "reply": "Bizden iki tane daha:\n“Ayvayı yedik.” ❌ “We ate the quince.” ✅ “We're in big trouble.”\n“Kafam kazan gibi.” ❌ “My head is like a cauldron.” ✅ “My brain is fried.”\n\nKelime kelime çeviri yerine kalıplarla konuşmayı Goof'la sesli dene: LINGOOF App Store'da, indirmesi ücretsiz 💜\n{LINK}",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Eline sağlık” nasıl denir?\n\n“Health to your hands!” dersen yemeği yapan ellerine bakar 😄 İngilizcede yemeği övmek yeter:\n\nYemeği yapana: This is delicious!\nİltifat ederken: You're a great cook!\nDavet edene: Thanks for dinner!\n\nSenin evde en çok “eline sağlık” denen yemek hangisi?",
+  "video": "medya:v3/r14-nasil-elinesaglik.mp4",
+  "fallback_img": "medya:v3/r14-nasil-elinesaglik.jpg",
+  "alt": "Goof'lu animasyon: “Eline sağlık” için üç İngilizce karşılık.",
+  "src": "r14-nasil-elinesaglik"
  },
  {
   "n": 216,
@@ -3234,28 +3285,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 339,
-  "date": "2026-12-13",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nprocrastinate (prou-KRES-tı-neyt)\n= erteleyip durmak\n\n“Stop procrastinating and start today!”\n= Ertelemeyi bırak, bugün başla!\n\n✍️ En çok neyi ertelersin? Dürüst ol 😅 “I always procrastinate on...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 İsim hâli: “procrastination”. Teselli: “Better late than never.” = Geç olsun güç olmasın ⏳",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 219,
+  "n": 414,
   "date": "2026-12-13",
   "time": "13:00",
-  "series": "Sen Olsan?",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Söz sende 🎤\n\nEn sevdiğin Türkçe deyimi yorumlara yaz, İngilizcesini birlikte bulalım.\n\nCesaretin varsa önce sen tahmin et! İngilizce bir karşılık bul ya da kelimesi kelimesine çevirmeyi dene. En komik tahminlere ayrıca bayılırız 😄\n\nBizden bir örnek ilk yorumda 👇",
-  "reply": "Mesela:\n“Sütten ağzı yanan yoğurdu üfleyerek yer.”\nİngilizcesi: “Once bitten, twice shy.”\n= Bir kez ısırılan, ikincisinde çekingen davranır.\nAynı fikir, bambaşka kelimeler 💜",
-  "topic": "İngilizce Konuşma"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Derste biri hapşırdı: “Achoo!”\n\nNe dersin? “Live long!” mı?\n\nCevap: Bless you! Çok yaşa'nın karşılığı bu. Hapşıran da Thanks! der.\n\nPeki sen “Çok yaşa”ya ne cevap verirsin: “Sen de gör” mü, “Hep beraber” mi? 😄",
+  "video": "medya:v3/r15-pov-blessyou.mp4",
+  "fallback_img": "medya:v3/r15-pov-blessyou.jpg",
+  "alt": "Goof'lu sahne: biri hapşırınca “Bless you!” denir.",
+  "spoiler": [
+   "Bless you! Çok yaşa'nın karşılığı bu. Hapşıran da Thanks! der."
+  ],
+  "src": "r15-pov-blessyou"
  },
  {
   "n": 220,
@@ -3263,7 +3305,6 @@
   "time": "18:00",
   "series": "Goof'un Pazar Hikâyesi",
   "cta": false,
-  "img": "11_Efes.jpg",
   "poll": null,
   "text": "Goof'un pazar hikâyesi 💜 Efes'ten\n\nMermer döşeli antik bir caddede yürüyordum. İki yanımda sütunlar, karşımda Celsus Kütüphanesi 🏛️\n\n“Beş dakika bakıp çıkarım.” dedim. Saate bir baktım, akşam olmuş!\n\n“Time flies!”\n= Zaman su gibi akıyor!\n\nUzun hâli: “Time flies when you're having fun!” = Eğlenirken zamanın nasıl geçtiğini anlamıyorsun bile!\n\nSizinle tanışalı neredeyse iki ay oldu, inanabiliyor musunuz? 💜",
   "reply": null,
@@ -3275,11 +3316,11 @@
   "time": "21:00",
   "series": "Haftanın Özeti",
   "cta": true,
-  "img": "card_deyim.jpg",
+  "img": "v3/th-deyim.jpg",
   "poll": null,
-  "text": "Deyim haftasının özeti: 7 İngilizce deyim ve Türkçe karşılıkları 💜\n\nEn çok hangisini seveceksin? Kaydet 🔖\n\nBu haftanın sesli görevini yaptıysan yorumlara ✅ bırak 💜",
+  "text": "Deyim haftasının özeti: 7 İngilizce deyim ve Türkçe karşılıkları 💜\n\nEn çok hangisini seveceksin? Kaydet 🔖\n\nHangisini ilk kullanacaksın? Numarasını yaz 💜",
   "reply": "LINGOOF'ta Goof'a dokun, “Hızlı pratik” ile 3 kısa soru çöz 🧩\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. 7 İngilizce deyim, 7 Türkçe karşılık. break the ice (buzları kırmak); raining cats and dogs (bardaktan boşanırcasına yağmak); spill the beans (baklayı ağzından çıkarmak); when pigs fly (balık kavağa çıkınca); the ball is in your court (top sende); not my cup of tea (benim tarzım değil); better late than never (geç olsun, güç olmasın).",
+  "alt": "LINGOOF özet kartı, Goof 2.0 ile: 7 İngilizce deyim ve Türkçe karşılıkları: break the ice, raining cats and dogs, spill the beans, when pigs fly, the ball is in your court, not my cup of tea, better late than never.",
   "topic": "İngilizce"
  },
  {
@@ -3295,33 +3336,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 340,
-  "date": "2026-12-14",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nstuck in traffic (stak in TRE-fik)\n= trafikte sıkışmak\n\n“Sorry, I'm stuck in traffic. I'll be there in ten minutes.”\n= Kusura bakma, trafikteyim. On dakikaya oradayım.\n\n✍️ Bugün nasıl geldin işe/okula? “Today I came by...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 “stuck” her sıkışmada işe yarar: “I'm stuck on this question.” = Bu soruda takıldım 🚗",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 223,
+  "n": 415,
   "date": "2026-12-14",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Türkçe altyazı",
-   "İngilizce altyazı",
-   "Altyazısız",
-   "Dublaj"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Uygulamadan bir an. Boşluğu doldur:\n“She ___ coffee every morning.”\ndrink / drinks\n\nCevap: drinks. He, she, it ile geniş zamanda fiil -s alır.\n\nLINGOOF'ta buraya drink yazınca Goof “Az kaldı!” der ve nedenini Türkçe açıklar. Sen bu -s'i en çok nerede unutuyorsun?",
+  "video": "medya:v3/r16-urun-drinks.mp4",
+  "fallback_img": "medya:v3/r16-urun-drinks.jpg",
+  "alt": "LINGOOF uygulamasından sahne: “drink” yerine “drinks”; Goof “Az kaldı!” diyor.",
+  "spoiler": [
+   "drinks. He, she, it ile geniş zamanda fiil -s alır."
   ],
-  "text": "Yeni hafta, yeni konu: diziler, filmler ve internet İngilizcesi 🍿\n\nYargılamak yok, dürüst cevap istiyoruz 😄\nDizileri nasıl izliyorsun?",
-  "reply": "Hangisini seçersen seç, bu akşam dizi izlerken işine yarayacak küçük bir taktik paylaşıyoruz 💜",
-  "topic": "İngilizce Öğren"
+  "src": "r16-urun-drinks"
  },
  {
   "n": 224,
@@ -3343,7 +3370,7 @@
   "cta": false,
   "img": null,
   "poll": null,
-  "text": "Haftanın sesli görevi 🎬 Öğlenki anketin devamı: Dizi izleyerek İngilizce konuşma pratiği nasıl yapılır?\n\n1. Altyazıyı İngilizceye çevir.\n2. Hoşuna giden bir replik mi geldi? Durdur ⏸️\n3. O cümleyi bir kez sesli söyle.\n4. Devam et.\n\nGörev: Bu hafta izlediğin her bölümde en az bir cümleyi böyle yakala. Dizi keyfin sesli pratiğe dönüşür 💜\n\nYaptığın gün yorumlara ✅ Bu akşam hangi diziyle başlıyorsun?",
+  "text": "Haftanın sesli görevi 🎬 Dizi izleyerek İngilizce konuşma pratiği nasıl yapılır?\n\n1. Altyazıyı İngilizceye çevir.\n2. Hoşuna giden bir replik mi geldi? Durdur ⏸️\n3. O cümleyi bir kez sesli söyle.\n4. Devam et.\n\nGörev: Bu hafta izlediğin her bölümde en az bir cümleyi böyle yakala. Dizi keyfin sesli pratiğe dönüşür 💜\n\nBu akşam hangi diziyle başlıyorsun?",
   "reply": null,
   "topic": "İngilizce Konuşma"
  },
@@ -3360,28 +3387,52 @@
   "topic": "İngilizce"
  },
  {
-  "n": 341,
+  "n": 456,
   "date": "2026-12-15",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncome again? (kam ı-GEN)\n= efendim? ne dedin?\n\n“Come again? I didn't catch that.”\n= Efendim? Tam anlayamadım.\n\n✍️ Sen duymadığında ne dersin? İngilizce bir alternatif yaz.\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Samimi ortamda “Come again?” rahat; resmi ortamda “Sorry, could you repeat that?” daha kibar 👂",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce Konuşma",
+  "text": "Telefonda panik yapma: 5 kalıp 📞\n\nTelefonda “I am Ece” değil “This is Ece” denir. Ses kesilince ne dersin? Sonra aramak istersen? Kartlarda.\n\nİngilizce telefon görüşmesi seni de geriyor mu?",
+  "carousel": [
+   "medya:v3/c09-telefon/01.jpg",
+   "medya:v3/c09-telefon/02.jpg",
+   "medya:v3/c09-telefon/03.jpg",
+   "medya:v3/c09-telefon/04.jpg",
+   "medya:v3/c09-telefon/05.jpg",
+   "medya:v3/c09-telefon/06.jpg",
+   "medya:v3/c09-telefon/07.jpg",
+   "medya:v3/c09-telefon/08.jpg",
+   "medya:v3/c09-telefon/09.jpg",
+   "medya:v3/c09-telefon/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Telefondapanik yapma:5 kalıp",
+   "Hi, this is Ece. (Merhaba, ben Ece.)",
+   "Could I speak to Mark, please? (Mark'la görüşebilir miyim?)",
+   "Sorry, you're breaking up. (Pardon, sesin kesiliyor.)",
+   "Can I call you back? (Seni sonra arayabilir miyim?)",
+   "Could you text me the address? (Adresi mesaj atar mısın?)",
+   "Mini test: Telefonda ‘Is this Ece?’ diye sordular:",
+   "Cevap: Speaking!",
+   "Özet: Hi, this is Ece. · Could I speak to Mark, please? · Sorry, you're breaking up. · Can I call you back? · Could you text me the address?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c09-telefon"
  },
  {
-  "n": 227,
+  "n": 416,
   "date": "2026-12-15",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Spoiler içermeyen bir test 🍿\n\nArkadaşın dizinin son bölümünü konuşurken birden duruyor:\n“Spoiler alert!”\n\nSence ne demek?\n\nA) Dikkat, sürpriz bozan geliyor!\nB) Alarm çalıyor!\nC) Dizi bitti.\n\nA, B, C? Yorumlara yaz, cevap ilk yorumda 👇",
-  "reply": "Doğru cevap A ✅ “Spoiler alert!” = Dikkat, sürprizi bozacak bilgi geliyor!\nAnlatmadan önce söylemek nezakettir 😄\nDinlemek istemiyorsan: “No spoilers, please!” = Spoiler verme lütfen!",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Hava karardı, arkadaşına diyorsun:\n“Can you open the light?”\n\nDoğrusu? Cevap: Can you turn on the light? Işık ve cihazlarda turn on / turn off denir.\n\nTV, telefon, klima: hepsi turn on. Türkçedeki “ışığı aç” yüzünden çok yapılan bir hata. Sen de yapıyor muydun?",
+  "video": "medya:v3/r17-hata-light.mp4",
+  "fallback_img": "medya:v3/r17-hata-light.jpg",
+  "alt": "Goof'lu animasyon: “open the light” düzeltilip “turn on the light” oluyor.",
+  "spoiler": [
+   "Can you turn on the light? Işık ve cihazlarda turn on / turn off denir."
+  ],
+  "src": "r17-hata-light"
  },
  {
   "n": 228,
@@ -3415,37 +3466,24 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "İki kelime, iki zıt anlam. Bütün fark tonda 🎙️\n\nŞaşkınlık:\n“I got the job!” – “No way! That's amazing!”\n= Yok artık! Harika!\n\nRet:\n“Can I borrow your car?” – “No way!”\n= Hayatta olmaz!\n\nŞaşkınlıkta ses uzar ve yükselir: “No waaay!” Reddederken kısa ve net söylenir.\n\nTonu sesli denemek için Goof Talk AI'da Goof'la konuş, o da sana sesli cevap verir 💜\n👉 {LINK}",
-  "reply": null,
+  "text": "İki kelime, iki zıt anlam. Bütün fark tonda 🎙️\n\nŞaşkınlık:\n“I got the job!” – “No way! That's amazing!”\n= Yok artık! Harika!\n\nRet:\n“Can I borrow your car?” – “No way!”\n= Hayatta olmaz!\n\nŞaşkınlıkta ses uzar ve yükselir: “No waaay!” Reddederken kısa ve net söylenir.",
+  "reply": "Tonu sesli denemek için Goof Talk AI'da Goof'la konuş, o da sana sesli cevap verir 💜\n👉 {LINK}",
   "topic": "İngilizce"
  },
  {
-  "n": 342,
-  "date": "2026-12-16",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nvibe (vayb)\n= hava, enerji, ortam\n\n“I love the vibe of this place.”\n= Buranın havasına bayıldım.\n\n✍️ En sevdiğin mekânın havası nasıl? “It has a... vibe.” (cozy, chill, fun...)\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Günlük dilde: “Good vibes only!” = Sadece iyi enerji! Bir şeyle uyumlu hissediyorsan: “I'm vibing with this song.” 🎶",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 231,
+  "n": 417,
   "date": "2026-12-16",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Ters köşe",
-   "Sezon finali",
-   "Yan karakter"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Kafede sıradasın. Hangisi daha doğal?\n\nA) I want a latte.\nB) Can I get a latte?\n\nCevap: B. I want talepkâr duyulur; siparişte Can I get…? ya da I'd like… dersin.\n\nSenin kahve siparişin ne? İngilizce yaz, bakalım ☕",
+  "video": "medya:v3/r18-quiz-latte.mp4",
+  "fallback_img": "medya:v3/r18-quiz-latte.jpg",
+  "alt": "Goof'lu mini test: kafede “I want a latte” mı “Can I get a latte?” mı?",
+  "spoiler": [
+   "B. I want talepkâr duyulur; siparişte Can I get…? ya da I'd like… dersin."
   ],
-  "text": "Dizinin yorumları tek bir cümleyle dolmuş 🍿\n“What a plot twist!”\n\nPeki “plot twist” ne demek? Oyunu ver, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap: “Ters köşe” ✅ “plot twist” = hikâyedeki beklenmedik dönüş.\nSezon finali ise “season finale”.\n\nGünlük hayatta şakayla da kullanılır: “Plot twist: the exam was actually easy.” 😄",
-  "topic": "İngilizce Öğren"
+  "src": "r18-quiz-latte"
  },
  {
   "n": 232,
@@ -3484,28 +3522,49 @@
   "topic": "İngilizce"
  },
  {
-  "n": 343,
+  "n": 457,
   "date": "2026-12-17",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nhilarious (hi-LE-ri-ıs)\n= çok komik, kahkaha attıran\n\n“That meme is hilarious!”\n= O caps çok komik!\n\n✍️ Seni en son ne kahkahaya boğdu? “The most hilarious thing I saw this week was...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 “funny” bir üst seviyeye çıkınca “hilarious” olur. Daha da güçlüsü: “I was crying laughing.” = Gülmekten ağladım 😂",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Otobüste, trende: 5 kurtarıcı cümle 🚆\n\nBilet al, yolunu sor, aktarma yap. Gidiş-dönüş İngiltere'de return, ABD'de round trip.\n\nYurt dışında toplu taşımada hiç kayboldun mu?",
+  "carousel": [
+   "medya:v3/c11-ulasim/01.jpg",
+   "medya:v3/c11-ulasim/02.jpg",
+   "medya:v3/c11-ulasim/03.jpg",
+   "medya:v3/c11-ulasim/04.jpg",
+   "medya:v3/c11-ulasim/05.jpg",
+   "medya:v3/c11-ulasim/06.jpg",
+   "medya:v3/c11-ulasim/07.jpg",
+   "medya:v3/c11-ulasim/08.jpg",
+   "medya:v3/c11-ulasim/09.jpg",
+   "medya:v3/c11-ulasim/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Otobüste, trende:5 kurtarıcı cümle",
+   "Does this bus go to the city centre? (Bu otobüs şehir merkezine gidiyor mu?)",
+   "A return ticket to Oxford, please. (Oxford'a gidiş-dönüş bilet lütfen.)",
+   "Which platform is it? (Hangi peron?)",
+   "Where do I change for Camden? (Camden için nerede aktarma yaparım?)",
+   "Could you tell me when to get off? (Ne zaman ineceğimi söyler misiniz?)",
+   "Mini test: Gidiş-dönüş bilet (İngiltere):",
+   "Cevap: return ticket",
+   "Özet: Does this bus go to the city centre? · A return ticket to Oxford, please. · Which platform is it? · Where do I change for Camden? · Could you tell me when to get off?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c11-ulasim"
  },
  {
-  "n": 235,
+  "n": 418,
   "date": "2026-12-17",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Bu kelimeyi yorumlarda her gün görüyorsun ama anlamından emin misin? 👀\n\nArkadaşın yazmış:\n“I'm lowkey hungry.”\n\nBuradaki “lowkey” ne demek?\n\nA) Biraz / içten içe\nB) Çok\nC) Hiç\n\nSeçimini yaz, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap A ✅ “lowkey” (lou-ki) = biraz, içten içe, belli etmeden.\n“I'm lowkey hungry.” = Aslında biraz acıktım.\nTersi “highkey”: açık açık, fazlasıyla.\n“I'm highkey obsessed with this song.” = Bu şarkıya resmen kafayı taktım 😄",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Afiyet olsun” nasıl denir?\n\n“Be healthy!” değil 😄 Duruma göre:\nGarson ya da ev sahibi: Enjoy your meal!\nKısa ve samimi: Enjoy!\nYemeğe başlarken: Dig in!\n\n“Dig in” kelime anlamıyla “kaz!” ama sofrada “Haydi başlayın!” demek. Sen hangisini kullanırdın?",
+  "video": "medya:v3/r19-nasil-afiyet.mp4",
+  "fallback_img": "medya:v3/r19-nasil-afiyet.jpg",
+  "alt": "Goof'lu animasyon: “Afiyet olsun” için üç İngilizce karşılık.",
+  "src": "r19-nasil-afiyet"
  },
  {
   "n": 236,
@@ -3515,8 +3574,8 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Kelime kutusu 📦 Mesaj kısaltmaları\n\n“BRB” = be right back (hemen dönüyorum)\n“Pizza's here, BRB!”\n\n“TBH” = to be honest (açıkçası)\n“TBH, season one was better.”\n\n“IDK” = I don't know (bilmiyorum)\n“IDK what to watch tonight.”\n\nBunlar yazışma dili. Konuşurken genelde açık hâlleri söylenir, mesela “I'll be right back.”\n\nSesli pratik için LINGOOF'ta Goof seninle sohbete hazır 🎙️\n👉 {LINK}",
-  "reply": null,
+  "text": "Kelime kutusu 📦 Mesaj kısaltmaları\n\n“BRB” = be right back (hemen dönüyorum)\n“Pizza's here, BRB!”\n\n“TBH” = to be honest (açıkçası)\n“TBH, season one was better.”\n\n“IDK” = I don't know (bilmiyorum)\n“IDK what to watch tonight.”\n\nBunlar yazışma dili. Konuşurken genelde açık hâlleri söylenir, mesela “I'll be right back.”",
+  "reply": "Sesli pratik için LINGOOF'ta Goof seninle sohbete hazır 🎙️\n👉 {LINK}",
   "topic": "İngilizce"
  },
  {
@@ -3544,28 +3603,20 @@
   "topic": "İngilizce"
  },
  {
-  "n": 344,
-  "date": "2026-12-18",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncrush (kraş)\n= hoşlanılan kişi, platonik aşk\n\n“I had a huge crush on my classmate.”\n= Sınıf arkadaşıma çok fena tutulmuştum.\n\n✍️ İlk crush'ın bir ünlü müydü? İngilizce yaz: “My first celebrity crush was...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Fiil olarak “ezmek” demek: “Crush the garlic.” = Sarımsağı ez. Aşkta ezilen kalp 😄💘",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 239,
+  "n": 419,
   "date": "2026-12-18",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": true,
-  "img": null,
-  "poll": null,
-  "text": "Öğle testi 🧩 İnternet sözlüğü\n\nEşleştir:\n1) FOMO\n2) red flag\n3) lowkey\n\na) Tehlike işareti\nb) Biraz, içten içe\nc) Bir şeyi kaçırma korkusu\n\nCevabını “1-?, 2-?, 3-?” diye yaz, doğrular ilk yorumda 👇\n\nBir tur daha ister misin? LINGOOF'ta Goof “Ne yapalım?” diye sorduğunda “Hızlı pratik” seçeneği seni üç kısa soruyla karşılar 💜\n👉 {LINK}",
-  "reply": "Doğrular: 1-c, 2-a, 3-b ✅\nFOMO = fear of missing out, yani bir şeyi kaçırma korkusu. Akşam ona ayrıca bakıyoruz.\n“I lowkey love this show.” = Bu diziyi içten içe seviyorum 😄",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "3 saniyede hatayı bul:\n“Can you explain me this?”\n\nCevap: Can you explain this to me? Explain kişiyi to ile alır.\n\nAynı tuzak say'de de var: say me değil, tell me ya da say to me. Bu hatayı derste en son kim yaptı? 🙋",
+  "video": "medya:v3/r20-hata-explain.mp4",
+  "fallback_img": "medya:v3/r20-hata-explain.jpg",
+  "alt": "Goof'lu animasyon: “explain me” düzeltilip “explain this to me” oluyor.",
+  "spoiler": [
+   "Can you explain this to me? Explain kişiyi to ile alır."
+  ],
+  "src": "r20-hata-explain",
+  "reply": "LINGOOF'ta hata yap, Goof nedenini Türkçe açıklasın. A1'den C1'e dersler, ilk dersler ücretsiz 💜 {LINK}"
  },
  {
   "n": 240,
@@ -3604,28 +3655,50 @@
   "topic": "İngilizce"
  },
  {
-  "n": 345,
+  "n": 458,
   "date": "2026-12-19",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nclumsy (KLAM-zi)\n= sakar\n\n“Sorry, I'm so clumsy today!”\n= Kusura bakma, bugün çok sakarım!\n\n✍️ En sakar anın? “I'm clumsy. Once I...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Biri bir şey düşürdüğünde rahatlatmak için: “Don't worry, it happens!” = Takma, olur böyle şeyler ☕",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Yurt dışında hastalanırsan 5 cümle: belirtini anlat, ilacını sor.\n\nKaydet, umarız hiç lazım olmaz 🤞 Ama Erasmus'a ya da Work & Travel'a gideceksen cebinde dursun.\n\nKartlarda en çok hangisi işine yarar?",
+  "carousel": [
+   "medya:v3/c10-doktor/01.jpg",
+   "medya:v3/c10-doktor/02.jpg",
+   "medya:v3/c10-doktor/03.jpg",
+   "medya:v3/c10-doktor/04.jpg",
+   "medya:v3/c10-doktor/05.jpg",
+   "medya:v3/c10-doktor/06.jpg",
+   "medya:v3/c10-doktor/07.jpg",
+   "medya:v3/c10-doktor/08.jpg",
+   "medya:v3/c10-doktor/09.jpg",
+   "medya:v3/c10-doktor/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Yurt dışındahastalanırsan5 cümle",
+   "I've had a fever since yesterday. (Dünden beri ateşim var.)",
+   "My throat hurts. (Boğazım ağrıyor.)",
+   "I'm allergic to penicillin. (Penisiline alerjim var.)",
+   "Do I need a prescription? (Reçete gerekiyor mu?)",
+   "How often should I take it? (Ne sıklıkla almalıyım?)",
+   "Mini test: ‘Başım ağrıyor’:",
+   "Cevap: I have a headache.",
+   "Özet: I've had a fever since yesterday. · My throat hurts. · I'm allergic to penicillin. · Do I need a prescription? · How often should I take it?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c10-doktor"
  },
  {
-  "n": 243,
+  "n": 420,
   "date": "2026-12-19",
   "time": "13:00",
-  "series": "Hata Avı",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Biri mesajının sonuna “LOL” yazdı diye seni çok sevdiğini sanma 😄\n\n❌ “LOL” = lots of love\n✅ “LOL” = laughing out loud\n= Yüksek sesle gülmek, yani “hahaha”\n\nArtık küçük harfle “lol” çoğu zaman mesajı yumuşatan bir “haha”.\n\nSevgi göndermek istiyorsan açık açık yaz: “Lots of love!” 💜\n\nSenin yanlış anladığın bir kısaltma oldu mu hiç?",
-  "reply": null,
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İş İngilizcesi",
+  "text": "Toplantıda müdürün soruyor: “Does that make sense?” Ama hiçbir şey anlamadın.\n\n“Repeat please!” mı dersin? Emir gibi duyulur.\nKibar hali: Sorry, could you go over that again?\n\nAnlamadığını söylemek zor gelir ama doğru cümleyle hiç garip değil. Sen anlamayınca sorar mısın, yoksa kafa mı sallarsın? 😅",
+  "video": "medya:v3/r21-pov-meeting.mp4",
+  "fallback_img": "medya:v3/r21-pov-meeting.jpg",
+  "alt": "Goof'lu sahne: toplantıda anlamayınca “Sorry, could you go over that again?” demek.",
+  "src": "r21-pov-meeting",
+  "reply": "Bu sahneyi LINGOOF'ta Goof'la sesli prova edebilirsin: Goof Talk AI'da sen konuşursun, Goof cevap verir 🎙️ Ücretsiz indir: {LINK}"
  },
  {
   "n": 244,
@@ -3664,28 +3737,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 346,
-  "date": "2026-12-20",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncliffhanger (KLİF-hen-gır)\n= merakta bırakan son\n\n“The season finale ended on a cliffhanger!”\n= Sezon finali merakta bırakan bir sonla bitti!\n\n✍️ Seni en çok bekleten dizi hangisi? “I can't wait for the new season of...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Kelimenin hikâyesi: eski dizi filmlerde bölümler kahraman uçurumdan (cliff) sarkarken (hang) biterdi 📺",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 247,
+  "n": 421,
   "date": "2026-12-20",
   "time": "13:00",
-  "series": "Sen Olsan?",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Sen olsan ne derdin? 🎬\n\nYeni tanıştığın biri soruyor:\n“Your English is really good! How did you learn it?”\n\nÇoğumuzun dürüst cevabı aynı: diziler ve filmler 😄\n\nSenin İngilizceni en çok hangi dizi ya da film geliştirdi? Cevabını İngilizce yaz:\n“For me, it was ___ because...”",
-  "reply": "Goof'un cevabı 💜\n“For me, it was a sitcom, because the episodes are short and everyone talks about everyday stuff. I learned tons of real-life phrases from it!”\n\nSenin cevabını da merak ediyoruz 👇",
-  "topic": "İngilizce Konuşma"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Telefonda Türk usulü vs native:\n\nAçarken: Yes, please? ❌ Hello? ✅\nKim arıyor?: Who are you? ❌ Who's calling, please? ✅\nKapatırken: Okay okay, bye bye bye! ❌ Talk soon. Bye! ✅\n\nSonuncusu bizde çok yaygın 😄 İngilizce telefonda en çok neyde zorlanıyorsun?",
+  "video": "medya:v3/r22-vs-telefon.mp4",
+  "fallback_img": "medya:v3/r22-vs-telefon.jpg",
+  "alt": "Goof'lu animasyon: telefonda Türk usulü cümleler ve doğal İngilizce karşılıkları.",
+  "src": "r22-vs-telefon"
  },
  {
   "n": 248,
@@ -3693,7 +3754,6 @@
   "time": "18:00",
   "series": "Goof'un Pazar Hikâyesi",
   "cta": false,
-  "img": "07_Istiklal.jpg",
   "poll": null,
   "text": "Goof'un pazar hikâyesi 💜\n\nÖğleden sonra İstiklal'deydim, elimde sıcacık kestane. Kalabalığın ortasında bir sokak müzisyeni çalıyordu 🎸 Dünyayı gitarıyla geziyormuş.\n\nŞarkı bitince alkışlayıp seslendim:\n“That was amazing!” = Harikaydı!\n\nBir sonraki şarkıyı kaydetmeden önce de sordum:\n“Can I take a video?” = Video çekebilir miyim?\n\n“Sure!” dedi ve kameraya göz kırptı 😄 Bazen bir pazarı güzelleştirmeye tek şarkı yeter 💜",
   "reply": "Küçük fark: Şarkı bittiyse “That was amazing!”, hâlâ sürüyorsa “This is amazing!”\nBirini kaydetmeden önce sormak da her yerde nezaketin gereği 💜",
@@ -3705,11 +3765,11 @@
   "time": "21:00",
   "series": "Haftanın Özeti",
   "cta": true,
-  "img": "card_dizi.jpg",
+  "img": "v3/th-dizi.jpg",
   "poll": null,
-  "text": "Haftanın özeti: Dizi ve internet İngilizcesi, 7 ifade 🎬\n\nKaydet 🔖 Bir sonraki bölümde kulağın yakalayacak.\n\nBu haftanın sesli görevini yaptıysan yorumlara ✅ bırak 💜",
+  "text": "Haftanın özeti: Dizi ve internet İngilizcesi, 7 ifade 🎬\n\nKaydet 🔖 Bir sonraki bölümde kulağın yakalayacak.\n\nHangisini en çok duyuyorsun? Numarasını yaz 💜",
   "reply": "Tekrar etmeden kalıcı olmuyor. LINGOOF'ta Goof “Ne yapalım?” deyince “Tekrar turu” ile öğrendiklerini tazele 💜\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. Dizi ve internet İngilizcesi: 7 ifade 🎬. I'm on my way! (Yoldayım!); Never mind. (Boş ver.); No way! (Yok artık!); Spoiler alert! (Sürpriz bozan geliyor!); binge-watch (art arda izlemek); That's a red flag. (Tehlike işareti.); I can't wait! (Sabırsızlanıyorum!).",
+  "alt": "LINGOOF özet kartı, Goof 2.0 ile: dizi ve internet İngilizcesi, 7 ifade: I'm on my way, Never mind, No way, No spoilers please, binge-watch, That's a red flag, I can't wait.",
   "topic": "İngilizce"
  },
  {
@@ -3725,31 +3785,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 347,
-  "date": "2026-12-21",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nalready (ol-RE-di)\n= çoktan, zaten\n\n“I've already had breakfast.”\n= Ben çoktan kahvaltı yaptım.\n\n✍️ Bugün çoktan yaptığın bir şey? “I've already...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 “already” genelde present perfect ile kullanılır ve fiilden önce gelir: “She has already left.” = O çoktan çıktı ⏰",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 251,
+  "n": 422,
   "date": "2026-12-21",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "have seen",
-   "saw"
-  ],
-  "text": "Sabahki konuda küçük bir tuzak var 😄\n\n“I ___ him yesterday.”\n= Onu dün gördüm.\n\nİpucu: Tek bir kelime her şeyi değiştiriyor 👀 Oyunu ver, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap: “saw” ✅ “I saw him yesterday.”\n\n“yesterday” belli bir zaman. Zaman belliyse past simple kullanılır; “I have seen him yesterday” olmaz ❌\nZaman belli değilse: “I've seen this movie before.”",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Kusura bakma” nasıl denir?\n\n“Don't look at the fault!” değil 😄\nKüçük bir aksilikte: Sorry about that!\nArkadaşlar arasında: My bad!\nResmî ortamda: I apologize.\n\n“My bad” favorimiz: kısa, samimi, suçu üstüne alıyor. En son neye “my bad” demen gerekirdi?",
+  "video": "medya:v3/r23-nasil-kusura.mp4",
+  "fallback_img": "medya:v3/r23-nasil-kusura.jpg",
+  "alt": "Goof'lu animasyon: “Kusura bakma” için üç İngilizce karşılık.",
+  "src": "r23-nasil-kusura"
  },
  {
   "n": 252,
@@ -3759,8 +3804,8 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Goof soruyor 🎙️\n\n“What did you do last weekend?”\n= Geçen hafta sonu ne yaptın?\n\n“last weekend” belli bir zaman, o yüzden cevap past simple ile kurulur.\n\nŞöyle başlayabilirsin:\n“Last weekend, I went to...” ya da “I stayed home and...”\n\nCevabını yorumlara İngilizce yaz, sonra bir de sesli söyle. LINGOOF'ta Goof'la konuştukça dilin alışır 💜\n👉 {LINK}",
-  "reply": "Goof'un cevabı 💜\n“I went to Kadıköy and had a great breakfast!”\n= Kadıköy'e gittim ve harika bir kahvaltı yaptım!\n\ngo → went, have → had: ikisi de düzensiz fiil.\nSenin hafta sonun nasıldı? 👇",
+  "text": "Goof soruyor 🎙️\n\n“What did you do last weekend?”\n= Geçen hafta sonu ne yaptın?\n\n“last weekend” belli bir zaman, o yüzden cevap past simple ile kurulur.\n\nŞöyle başlayabilirsin:\n“Last weekend, I went to...” ya da “I stayed home and...”\n\nCevabını yorumlara İngilizce yaz.",
+  "reply": "Goof'un cevabı 💜\n“I went to Kadıköy and had a great breakfast!”\n= Kadıköy'e gittim ve harika bir kahvaltı yaptım!\n\ngo → went, have → had: ikisi de düzensiz fiil.\nSenin hafta sonun nasıldı? 👇\n\nCevabını bir de sesli söyle: LINGOOF'ta Goof'la konuştukça dilin alışır 💜 {LINK}",
   "topic": "İngilizce Konuşma"
  },
  {
@@ -3771,7 +3816,7 @@
   "cta": false,
   "img": null,
   "poll": null,
-  "text": "Haftanın sesli görevi 🧠 Present perfect mi, past simple mı? Tek bir pratik kural:\n\nCümlede belli bir zaman var mı? (yesterday, last week, in 2019)\n👉 Past simple: “I went to Antalya in 2019.”\n\nZaman önemli değil, sadece deneyimi mi anlatıyorsun?\n👉 Present perfect: “I've been to Antalya.”\n\nGörev: Bu hafta her gün iki cümle kur ve yüksek sesle söyle: “I've been to...” ve “I went there in...” Yaptığın gün yorumlara ✅",
+  "text": "Haftanın sesli görevi 🧠 Present perfect mi, past simple mı? Tek bir pratik kural:\n\nCümlede belli bir zaman var mı? (yesterday, last week, in 2019)\n👉 Past simple: “I went to Antalya in 2019.”\n\nZaman önemli değil, sadece deneyimi mi anlatıyorsun?\n👉 Present perfect: “I've been to Antalya.”\n\nGörev: Bu hafta her gün iki cümle kur ve yüksek sesle söyle: “I've been to...” ve “I went there in...” İlk cümleni yorumlara yaz: “I've been to...”",
   "reply": null,
   "topic": "İngilizce Konuşma"
  },
@@ -3788,28 +3833,53 @@
   "topic": "İngilizce"
  },
  {
-  "n": 348,
+  "n": 459,
   "date": "2026-12-22",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nstill (stil)\n= hâlâ\n\n“I still remember my first English lesson.”\n= İlk İngilizce dersimi hâlâ hatırlıyorum.\n\n✍️ Çocukluğundan hâlâ yaptığın bir şey? “I still...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Sıra önemli: “still” genelde fiilden önce gelir ama “be”den sonra: “I still live here.” / “I'm still here.” 📍",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "in, on, at: bir kere öğren, bitsin 🗓️\n\nSaatte at, günde on, ay ve yılda in. Gece mi? at night. Örnekler ve sonunda mini test kartlarda.\n\nMesaj yazarken en çok hangisinde duraksıyorsun?",
+  "carousel": [
+   "medya:v3/c01-inonat/01.jpg",
+   "medya:v3/c01-inonat/02.jpg",
+   "medya:v3/c01-inonat/03.jpg",
+   "medya:v3/c01-inonat/04.jpg",
+   "medya:v3/c01-inonat/05.jpg",
+   "medya:v3/c01-inonat/06.jpg",
+   "medya:v3/c01-inonat/07.jpg",
+   "medya:v3/c01-inonat/08.jpg",
+   "medya:v3/c01-inonat/09.jpg",
+   "medya:v3/c01-inonat/10.jpg"
+  ],
+  "alts": [
+   "Kapak: in, on, at:bir kere öğren, bitsin",
+   "The class starts at 9. (Ders 9'da başlıyor.)",
+   "See you on Monday! (Pazartesi görüşürüz!)",
+   "I was born in 1999. (1999'da doğdum.)",
+   "I study in the evening. (Akşamları ders çalışırım.)",
+   "What do you do on New Year's Eve? (Yılbaşı gecesi ne yapıyorsun?)",
+   "Mini test: Doğru olanı seç:",
+   "Cevap: in the evening",
+   "Özet: The class starts at 9. · See you on Monday! · I was born in 1999. · I study in the evening. · What do you do on New Year's Eve?",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c01-inonat"
  },
  {
-  "n": 255,
+  "n": 423,
   "date": "2026-12-22",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Tek boşluk, üç seçenek: öğle testi 🧩\n\nBir zamanlar İzmir'de yaşıyordun, artık yaşamıyorsun:\n“I ___ to live in İzmir.”\n\nA) use\nB) used\nC) am used\n\nCevabını yaz, doğrusu ve açıklaması ilk yorumda 👇",
-  "reply": "Doğru cevap B ✅ “I used to live in İzmir.” = Eskiden İzmir'de yaşardım.\nA olmaz: Olumlu cümlede “use to” yazılmaz.\nC ise bambaşka bir kalıp: “I'm used to...” = alışkın olmak. Akşam onu konuşuyoruz 😉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Bu hatayı neredeyse herkes yapar:\n“She work in a bank.”\n\nCevap: She works in a bank. He, she, it ile geniş zamanda fiile -s gelir.\n\nKonuşurken bu -s'i unutmak çok normal. Kulağın alışsın diye üç kez sesli söyle. Sen en çok hangi kuralı unutuyorsun?",
+  "video": "medya:v3/r24-hata-works.mp4",
+  "fallback_img": "medya:v3/r24-hata-works.jpg",
+  "alt": "Goof'lu animasyon: “She work” düzeltilip “She works” oluyor.",
+  "spoiler": [
+   "She works in a bank. He, she, it ile geniş zamanda fiile -s gelir."
+  ],
+  "src": "r24-hata-works",
+  "reply": "LINGOOF'ta hata yap, Goof nedenini Türkçe açıklasın. A1'den C1'e dersler, ilk dersler ücretsiz 💜 {LINK}"
  },
  {
   "n": 256,
@@ -3843,36 +3913,24 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Komşun elinde ağır kolilerle merdivende. Hiç düşünmeden:\n“I'll help you!” = Yardım edeyim! 💪\n\nwill = o an verilen karar\n\nAma önceden planladıysan:\n“I'm going to visit my parents this weekend.”\n= Bu hafta sonu aileme gideceğim.\n\ngoing to = önceden yapılmış plan\n\nBu tür ikilileri adım adım öğrenmek istersen LINGOOF'taki kursa göz at: A1'den C1'e uzanıyor, her ders kısa ve Türkçe açıklamalı 💜\n👉 {LINK}",
+  "text": "Komşun elinde ağır kolilerle merdivende. Hiç düşünmeden:\n“I'll help you!” = Yardım edeyim! 💪\n\nwill = o an verilen karar\n\nAma önceden planladıysan:\n“I'm going to visit my parents this weekend.”\n= Bu hafta sonu aileme gideceğim.\n\ngoing to = önceden yapılmış plan",
   "reply": null,
   "topic": "İngilizce"
  },
  {
-  "n": 349,
-  "date": "2026-12-23",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nyet (yet)\n= henüz (olumsuzda), şimdiye kadar (soruda)\n\n“I haven't finished my project yet.”\n= Projemi henüz bitirmedim.\n\n✍️ Henüz yapmadığın ama yapmak istediğin bir şey? “I haven't... yet.”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 “yet” genelde cümlenin sonunda: “Have you eaten yet?” = Yemek yedin mi (şimdiye kadar)? 🍽️",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 259,
+  "n": 424,
   "date": "2026-12-23",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "I'll get it!",
-   "I'm going to get it!"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Hangisi doğru?\n\nA) We discussed it.\nB) We discussed about it.\n\nCevap: A. Discuss zaten “hakkında konuşmak” demek, about almaz: discuss the plan.\n\nAma talk about ve have a discussion about doğru. Sen bugüne kadar hangisini kullanıyordun?",
+  "video": "medya:v3/r25-quiz-discuss.mp4",
+  "fallback_img": "medya:v3/r25-quiz-discuss.jpg",
+  "alt": "Goof'lu mini test: “discussed it” mi “discussed about it” mi?",
+  "spoiler": [
+   "A. Discuss zaten “hakkında konuşmak” demek, about almaz: discuss the plan."
   ],
-  "text": "Evde telefon çalıyor, herkes birbirine bakıyor 📞\nSen ayağa kalkıp “Ben bakarım!” diyorsun.\n\nİngilizcesi hangisi? Oyunu ver, cevap ilk yorumda 👇",
-  "reply": "Doğru cevap: “I'll get it!” ✅\n\nTelefon çaldı, sen de o an karar verdin. Önceden plan yoksa will. Kapı çaldığında da aynı cümle iş görür 🚪",
-  "topic": "İngilizce Öğren"
+  "src": "r25-quiz-discuss"
  },
  {
   "n": 260,
@@ -3911,28 +3969,50 @@
   "topic": "İngilizce"
  },
  {
-  "n": 350,
+  "n": 460,
   "date": "2026-12-24",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ntradition (trı-Dİ-şın)\n= gelenek\n\n“Eating pomegranates on New Year's Eve is our family tradition.”\n= Yılbaşında nar yemek ailemizin geleneği.\n\n✍️ Sizin yılbaşı geleneğiniz ne? “Our New Year's tradition is...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Sıfat hâli “traditional”: “This is a traditional Turkish dessert.” = Bu geleneksel bir Türk tatlısı 🎄",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "Türklerin en sık yaptığı 5 İngilizce hata, doğrusu ve kısa nedeniyle tek yerde.\n\nI am agree, I have 25 years old... Tanıdık geldi mi? Kaydet, bir daha düşmezsin.\n\nSen hangisini yapıyordun?",
+  "carousel": [
+   "medya:v3/c08-hatalar/01.jpg",
+   "medya:v3/c08-hatalar/02.jpg",
+   "medya:v3/c08-hatalar/03.jpg",
+   "medya:v3/c08-hatalar/04.jpg",
+   "medya:v3/c08-hatalar/05.jpg",
+   "medya:v3/c08-hatalar/06.jpg",
+   "medya:v3/c08-hatalar/07.jpg",
+   "medya:v3/c08-hatalar/08.jpg",
+   "medya:v3/c08-hatalar/09.jpg",
+   "medya:v3/c08-hatalar/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Türklerinen sık yaptığı5 hata",
+   "I agree with you. (“I am agree” değil.)",
+   "I'm 25 years old. (“I have 25 years” değil.)",
+   "I made a mistake. (“I did a mistake” değil.)",
+   "Can you turn on the light? (“Open the light” değil.)",
+   "I'm waiting for you. (“I'm waiting you” değil.)",
+   "Mini test: Hangisi doğru?",
+   "Cevap: I agree.",
+   "Özet: I agree with you. · I'm 25 years old. · I made a mistake. · Can you turn on the light? · I'm waiting for you.",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c08-hatalar"
  },
  {
-  "n": 263,
+  "n": 425,
   "date": "2026-12-24",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Öğle testi 🧩 Sabahki kuralın tuzaklı hâli\n\n“He's ___ honest man.”\n= O dürüst bir adam.\n\nA) a\nB) an\n\nİpucu: “honest” kelimesini önce sesli oku, sonra karar ver 👀\n\nA mı, B mi? Yorumlara yaz, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap B ✅ “He's an honest man.”\n“honest” (a-nıst) diye okunur, h sessiz. İlk ses sesli olduğu için “an”.\nAma “a hotel”, “a house” deriz, çünkü orada h okunuyor 😉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Arkadaşın mesaj attı: “I passed my exam!!”\n\n“Congratulations. You are very successful.” yazmak üzeresin. Yanlış değil ama resmî bir yazı gibi duruyor.\n\nSohbette daha sıcak: No way! Well done, you!\n\nBu dönem geçmek istediğin sınav hangisi? YDS, YÖKDİL, IELTS...",
+  "video": "medya:v3/r26-pov-exam.mp4",
+  "fallback_img": "medya:v3/r26-pov-exam.jpg",
+  "alt": "Goof'lu sahne: sınavı geçen arkadaşa “No way! Well done, you!” demek.",
+  "src": "r26-pov-exam",
+  "reply": "Bu sahneyi LINGOOF'ta Goof'la sesli prova edebilirsin: Goof Talk AI'da sen konuşursun, Goof cevap verir 🎙️ Ücretsiz indir: {LINK}"
  },
  {
   "n": 264,
@@ -3971,28 +4051,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 351,
-  "date": "2026-12-25",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncozy (KOU-zi)\n= sıcacık, rahat, huzurlu\n\n“This blanket is so cozy.”\n= Bu battaniye öyle sıcacık ki.\n\n✍️ Kışın en cozy anın ne? “The coziest moment of my day is...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 İngiliz yazımı “cosy”. Bu kelimenin en güzel kullanımı: “a cozy night in” = evde geçen sıcacık bir akşam 🫖",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 267,
+  "n": 426,
   "date": "2026-12-25",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": true,
-  "img": null,
-  "poll": null,
-  "text": "Üç boşluk, üç edat ⏱️ Bakalım hangisi nereye gidiyor:\n\n1) See you ___ Monday!\n2) The meeting starts ___ 9 o'clock.\n3) I'm going to Antalya ___ October.\n\nSeçenekler: in / on / at\n\nCevaplarını sırayla yaz, doğrular ilk yorumda 👇\n\nKural tamam, sıra konuşmada: LINGOOF'ta barista Goof soruyor, “Hey! What can I get for you?” Mikrofona dokun, sesli cevap ver 🎙️\n👉 {LINK}",
-  "reply": "Doğrular: 1) on 2) at 3) in ✅\nGün için on, saat için at, ay için in.\nÜçü de doğruysa bu konuyu kapattın demektir 😎",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Bu hatayı fark et:\n“People is very friendly here.”\n\nCevap: People are very friendly here. People çoğuldur, is değil are alır.\n\nTekili person: one person, two people. Yurt dışında insanların en çok neyi seni şaşırttı?",
+  "video": "medya:v3/r27-hata-people.mp4",
+  "fallback_img": "medya:v3/r27-hata-people.jpg",
+  "alt": "Goof'lu animasyon: “People is” düzeltilip “People are” oluyor.",
+  "spoiler": [
+   "People are very friendly here. People çoğuldur, is değil are alır."
+  ],
+  "src": "r27-hata-people"
  },
  {
   "n": 268,
@@ -4031,28 +4102,50 @@
   "topic": "İngilizce"
  },
  {
-  "n": 352,
+  "n": 461,
   "date": "2026-12-26",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nplenty (PLEN-ti)\n= bolca, fazlasıyla\n\n“Don't worry, we have plenty of time.”\n= Merak etme, bolca vaktimiz var.\n\n✍️ Bu kış neyin bolca olsun isterdin? “I want plenty of...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Çok pratik: “plenty of” sayılan (friends) ve sayılamayan (time) isimlerle kullanılır. Many/much karışıklığına son 😌",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "Yeni yıl mesajını İngilizce yaz: arkadaşa, hocaya, iş yerine hazır kalıplar 🎉\n\nKaydet, 31 Aralık gecesi lazım olacak.\n\nBu yıl kaç kişiye İngilizce mesaj atacaksın?",
+  "carousel": [
+   "medya:v3/c13-yeniyilmesaj/01.jpg",
+   "medya:v3/c13-yeniyilmesaj/02.jpg",
+   "medya:v3/c13-yeniyilmesaj/03.jpg",
+   "medya:v3/c13-yeniyilmesaj/04.jpg",
+   "medya:v3/c13-yeniyilmesaj/05.jpg",
+   "medya:v3/c13-yeniyilmesaj/06.jpg",
+   "medya:v3/c13-yeniyilmesaj/07.jpg",
+   "medya:v3/c13-yeniyilmesaj/08.jpg",
+   "medya:v3/c13-yeniyilmesaj/09.jpg",
+   "medya:v3/c13-yeniyilmesaj/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Yeni yıl mesajınıİngilizce yaz",
+   "Happy New Year! Love you guys! (Mutlu yıllar! Sizi seviyorum!)",
+   "Wishing you all the best in 2027! (2027'de her şeyin en iyisini dilerim!)",
+   "Thank you for everything this year. (Bu yıl her şey için teşekkürler.)",
+   "Wishing you a successful new year. (Başarılı bir yeni yıl dilerim.)",
+   "Here's to a great year! (Harika bir yıla!)",
+   "Mini test: Hocana yazıyorsun:",
+   "Cevap: Wishing you a wonderful new year!",
+   "Özet: Happy New Year! Love you guys! · Wishing you all the best in 2027! · Thank you for everything this year. · Wishing you a successful new year. · Here's to a great year!",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c13-yeniyilmesaj"
  },
  {
-  "n": 271,
+  "n": 427,
   "date": "2026-12-26",
   "time": "13:00",
-  "series": "Hata Avı",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Doğum günü partisi hazırlıyorsun, arkadaşına soruyorsun: Kaç kişi geliyor? 🎉\n\n❌ “How much people are coming?”\n✅ “How many people are coming?”\n\nNeden? “people” sayılabilir ve çoğul. Sayılabilenler için “How many?”\n\n“How much?” ise sayamadığın şeyler ve fiyat için:\n“How much time do we have?”\n“How much is the cake?” 🎂\n\nSenin en çok karıştırdığın ikili hangisi?",
-  "reply": null,
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "“Hayırlı olsun” nasıl denir?\n\n“Let it be charity!” değil 😄\nYeni ev, iş, araba: Congrats!\nYeni eve taşınana: Enjoy your new place!\nYeni bir başlangıca: All the best!\n\n2026'da sana kim “hayırlı olsun” dedi? Yeni iş mi, yeni ev mi?",
+  "video": "medya:v3/r28-nasil-hayirli.mp4",
+  "fallback_img": "medya:v3/r28-nasil-hayirli.jpg",
+  "alt": "Goof'lu animasyon: “Hayırlı olsun” için üç İngilizce karşılık.",
+  "src": "r28-nasil-hayirli",
+  "reply": "Erasmus+, Work & Travel ve iş görüşmesi yolları LINGOOF'ta: önce hazırlan, sonra Goof'la prova yap 💜 {LINK}"
  },
  {
   "n": 272,
@@ -4091,33 +4184,16 @@
   "topic": "İngilizce"
  },
  {
-  "n": 353,
-  "date": "2026-12-27",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nfancy (FEN-si)\n= (İngiliz İngilizcesi) canı istemek\n\n“Do you fancy a cup of tea?”\n= Bir fincan çay ister misin?\n\n✍️ Şu an ne fancy'lersin? 😄 “I fancy...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Sıfat olarak “süslü, şık” demek: “a fancy restaurant” = şık bir restoran. İngiltere'de “I fancy him” = Ondan hoşlanıyorum 🫣",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 275,
+  "n": 428,
   "date": "2026-12-27",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "Zamanlar",
-   "a - an - the",
-   "in - on - at",
-   "Phrasal verbs"
-  ],
-  "text": "Bir haftadır zamanlarla, edatlarla, kalıplarla uğraşıyoruz 🧩 Dürüst cevap lütfen:\n\nGramerde seni en çok ne zorluyor?",
-  "reply": "Küçük spoiler: Yarından itibaren yıl sonu haftası başlıyor. 2027'ye konuşarak giriyoruz 🎉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Nezaket: Türk usulü vs native\n\n“Rica ederim” → I request! ❌ You're welcome! ✅\n“Bol şans” → Plenty luck! ❌ Good luck! ✅\n“Boş ver” → Give empty! ❌ Never mind! ✅\n\n“Give empty” hayatımızın cümlesi olabilir 😄 Bunlardan hangisini daha önce duydun?",
+  "video": "medya:v3/r29-vs-nezaket.mp4",
+  "fallback_img": "medya:v3/r29-vs-nezaket.jpg",
+  "alt": "Goof'lu animasyon: nezaket kalıplarında kelimesi kelimesine çeviriler ve doğruları.",
+  "src": "r29-vs-nezaket"
  },
  {
   "n": 276,
@@ -4137,11 +4213,11 @@
   "time": "21:00",
   "series": "Haftanın Özeti",
   "cta": true,
-  "img": "card_gramer.jpg",
+  "img": "v3/th-gramer.jpg",
   "poll": null,
-  "text": "Haftanın özeti: Korkutmayan gramer, 7 kısa kural 🧩\n\nKaydet 🔖 Takıldığında tek bakış yeter.\n\nBu haftanın sesli görevini yaptıysan yorumlara ✅ bırak 💜",
-  "reply": "Her gün birkaç dakika yeter: LINGOOF'ta “Günün yolu” ana ekranda seni bekliyor. İndirmesi ücretsiz 💜\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. Korkutmayan gramer: 7 kısa kural. I've been to London. (Deneyim → present perfect); I used to... (Eskiden ...ardım); I'll... / I'm going to... (Anlık karar / önceden plan); a university · an hour (Harfe değil, sese bak); at 9 · on Monday · in October (Saat · gün · ay); many people · much time (Sayılabilen · sayılamayan); I'd like... (Kibar istek).",
+  "text": "Haftanın özeti: Korkutmayan gramer, 7 kısa kural 🧩\n\nKaydet 🔖 Takıldığında tek bakış yeter.\n\nEn çok hangisinde takılıyordun? Numarasını yaz 💜",
+  "reply": "Her güne küçük bir adım: LINGOOF'ta “Günün yolu” ana ekranda seni bekliyor. İndirmesi ücretsiz 💜\n{LINK}",
+  "alt": "LINGOOF özet kartı, Goof 2.0 ile: 7 kısa gramer kuralı: present perfect, used to, will ve going to, a ve an, at on in, many ve much, I'd like.",
   "topic": "İngilizce"
  },
  {
@@ -4157,28 +4233,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 354,
-  "date": "2026-12-28",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nfarewell (fer-VEL)\n= veda\n\n“We had a farewell dinner for our colleague.”\n= İş arkadaşımız için veda yemeği yaptık.\n\n✍️ 2026'ya bir veda cümlesi yaz: “Farewell 2026, you were...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Günlük konuşmada “farewell” resmi kaçar; samimi vedalar: “See you soon!”, “Take care!”, “Keep in touch!” 👋",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 279,
+  "n": 429,
   "date": "2026-12-28",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Takvim testi 🗓️\n\nYurt dışındaki bir arkadaşın yazmış:\n“See you on New Year's Eve!”\n\nPeki “New Year's Eve” ne demek?\n\nA) Yılbaşı gecesi (31 Aralık)\nB) 1 Ocak\nC) Yeni yıl haftası\n\nİpucu: Buradaki “eve”, Türkçedeki “eve” değil 😄\nTahminini yaz, doğrusu ilk yorumda 👇",
-  "reply": "Doğru cevap A ✅ “New Year's Eve” = Yılbaşı gecesi, yani 31 Aralık.\n“eve” burada arife, bir önceki gün demek: “Christmas Eve” de 24 Aralık.\n1 Ocak'ın adı ise “New Year's Day”.\nYani arkadaşınla perşembe gecesi buluşuyorsun 😉",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "Seyahat İngilizcesi",
+  "text": "Uygulamadan bir sahne. Boşluğu doldur:\n“I'm waiting ___ the bus.”\nto / for / at\n\nCevap: for. Birini ya da bir şeyi beklerken wait for denir.\n\nLINGOOF'ta her hatanın Türkçe açıklaması var; seyahat ve yurt dışı yolları da hazır. Yanlış seçmek serbest, Goof düzeltir.",
+  "video": "medya:v3/r30-urun-waiting.mp4",
+  "fallback_img": "medya:v3/r30-urun-waiting.jpg",
+  "alt": "LINGOOF uygulamasından sahne: “waiting to” yerine “waiting for”; Goof Türkçe açıklıyor.",
+  "spoiler": [
+   "for. Birini ya da bir şeyi beklerken wait for denir."
+  ],
+  "src": "r30-urun-waiting"
  },
  {
   "n": 280,
@@ -4189,7 +4256,7 @@
   "img": null,
   "poll": null,
   "text": "Goof soruyor 🎙️\n\n“What's your New Year's resolution?”\n= Yeni yıl hedefin ne?\n\n“resolution” (re-zı-LUU-şın) burada kendine verdiğin söz, karar demek.\n\nŞöyle başlayabilirsin:\n“My New Year's resolution is to...”\nya da\n“In 2027, I'm going to...”\n\nKüçük ya da büyük, hedefini yorumlara İngilizce yaz 💜",
-  "reply": "Benimki hazır 💜\n“I'm going to speak English every single day!”\n= Her gün, hiç aksatmadan İngilizce konuşacağım!\n\nÖnceden verilmiş bir karar olduğu için “going to” kullandım. Beş dakika bile olsa, söz!",
+  "reply": "Benimki hazır 💜\n“I'm going to speak English every single day!”\n= Her gün, hiç aksatmadan İngilizce konuşacağım!\n\nÖnceden verilmiş bir karar olduğu için “going to” kullandım. Kısa da olsa, söz!",
   "topic": "İngilizce Konuşma"
  },
  {
@@ -4200,8 +4267,8 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Yılın son sesli görevi 💜 2027 için koca hedefler yerine tek bir küçük alışkanlık:\n\nHer gün aynı saatte, 5 dakika, sesli İngilizce. Az mı? Bir yılda 30 saati geçer.\n\nEn kolayı onu sabah kahvesine bağlamak ☕\n1. İlk yudumda günün planını söyle: “Today I'm going to...”\n2. Burada öğrendiğin bir cümleyi üç kez sesli tekrarla.\n3. Etrafında gördüğün üç şeyi anlat.\n\nTakvime her gün bir ✅ koy, zinciri kırma. Senin 5 dakikan hangi saatte?",
-  "reply": "Her gün için hazır bir başlangıç noktası istersen: LINGOOF'ta ana ekrandaki “Günün yolu” birkaç adım, birkaç dakika sürüyor. İndirmesi ücretsiz 💜\n{LINK}",
+  "text": "Yılın son sesli görevi 💜 2027 için koca hedefler yerine tek bir küçük alışkanlık:\n\nHer gün aynı saatte, 10 dakika, sesli İngilizce. Az mı? Bir yılda 60 saati geçer.\n\nEn kolayı onu sabah kahvesine bağlamak ☕\n1. İlk yudumda günün planını söyle: “Today I'm going to...”\n2. Burada öğrendiğin bir cümleyi üç kez sesli tekrarla.\n3. Etrafında gördüğün üç şeyi anlat.\n\nTakvime her gün bir ✅ koy, zinciri kırma. Senin 10 dakikan hangi saatte?",
+  "reply": "Her gün için hazır bir başlangıç noktası istersen: LINGOOF'ta ana ekrandaki “Günün yolu” seni adım adım götürüyor. İndirmesi ücretsiz 💜\n{LINK}",
   "topic": "İngilizce Konuşma"
  },
  {
@@ -4217,33 +4284,53 @@
   "topic": "İngilizce"
  },
  {
-  "n": 355,
+  "n": 462,
   "date": "2026-12-29",
   "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nmilestone (MAYL-stoun)\n= dönüm noktası, önemli aşama\n\n“Graduating was a big milestone for me.”\n= Mezun olmak benim için büyük bir dönüm noktasıydı.\n\n✍️ 2026'daki milestone'un neydi? “My biggest milestone this year was...”\nCümleni yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Asıl anlamı yol kenarındaki “mil taşı”. Hayatta ne kadar yol aldığını gösteren taşlar gibi düşün 🪨",
-  "topic": "İngilizce Kelime"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "2027 hedefini İngilizce söyle: 5 kalıp, kendi hedefinle doldur.\n\nThis year, I'm going to... Kararlı plan için going to.\n\nKendi hedefini yorumlara İngilizce yaz. Goof'unki ilk yorumda 💜",
+  "carousel": [
+   "medya:v3/c14-hedef/01.jpg",
+   "medya:v3/c14-hedef/02.jpg",
+   "medya:v3/c14-hedef/03.jpg",
+   "medya:v3/c14-hedef/04.jpg",
+   "medya:v3/c14-hedef/05.jpg",
+   "medya:v3/c14-hedef/06.jpg",
+   "medya:v3/c14-hedef/07.jpg",
+   "medya:v3/c14-hedef/08.jpg",
+   "medya:v3/c14-hedef/09.jpg",
+   "medya:v3/c14-hedef/10.jpg"
+  ],
+  "alts": [
+   "Kapak: 2027 hedefiniİngilizce söyle",
+   "This year, I'm going to learn English. (Bu yıl İngilizce öğreneceğim.)",
+   "I want to start working out. (Spora başlamak istiyorum.)",
+   "I'm going to quit sugar. (Şekeri bırakacağım.)",
+   "My goal is to read 12 books. (Hedefim 12 kitap okumak.)",
+   "I'll try to be more patient. (Daha sabırlı olmaya çalışacağım.)",
+   "Mini test: ‘Sigarayı bırakacağım’:",
+   "Cevap: I'm going to quit smoking.",
+   "Özet: This year, I'm going to learn English. · I want to start working out. · I'm going to quit sugar. · My goal is to read 12 books. · I'll try to be more patient.",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c14-hedef",
+  "reply": "Goof'un hedefi hazır 💜\n“This year, I'm going to make more mistakes, out loud!”\n= Bu yıl daha çok hata yapacağım, hem de sesli!\nÇünkü hata yapmadan konuşma gelişmiyor."
  },
  {
-  "n": 283,
+  "n": 430,
   "date": "2026-12-29",
   "time": "13:00",
-  "series": "Anket",
-  "cta": false,
-  "img": null,
-  "poll": [
-   "İş",
-   "Seyahat",
-   "Okul",
-   "Dizi ve film"
+  "series": "Goof Videosu",
+  "topic": "İngilizce",
+  "text": "Sen de böyle diyor musun?\n“It depends of the weather.”\n\nCevap: It depends on the weather. Depend her zaman on ile kullanılır.\n\n“Duruma göre” demek istediğinde kısaca: It depends! Yılbaşı planın belli mi, yoksa “it depends” mi? 😄",
+  "video": "medya:v3/r31-hata-depends.mp4",
+  "fallback_img": "medya:v3/r31-hata-depends.jpg",
+  "alt": "Goof'lu animasyon: “depends of” düzeltilip “depends on” oluyor.",
+  "spoiler": [
+   "It depends on the weather. Depend her zaman on ile kullanılır."
   ],
-  "text": "Yeni yıl kapıda, hayaller hazır ✨\n\n2027'de İngilizceyi en çok nerede kullanmak istiyorsun?\n\nOyunu ver; istersen yorumda nedenini de İngilizce yaz: “In 2027, I want to use English for...” 💜",
-  "reply": "Goof'un oyu: Seyahat ✈️\n“I want to use English on my next trip!”\n= Bir sonraki seyahatimde İngilizce konuşmak istiyorum!",
-  "topic": "İngilizce Öğren"
+  "src": "r31-hata-depends"
  },
  {
   "n": 284,
@@ -4263,7 +4350,6 @@
   "time": "21:00",
   "series": "Goof'un Günlüğü",
   "cta": false,
-  "img": "06_GalataKoprusu.jpg",
   "poll": null,
   "text": "Goof'un günlüğü 💜 Galata Köprüsü'nden\n\nGün batımında buradaydım: turuncu bir Haliç, olta sallayan balıkçılar, tepemde martılar. Yılın en güzel manzarası 🌅\n\nBu yıl Kapadokya'da balon oldum, Pamukkale'de çıplak ayakla yürüdüm, Efes'te sütunlar arasında dolaştım, Uzungöl'de sisle çay içtim...\n\nGalata'da “What a view!” demiştim. Şimdi sıra bunda:\n“What a year!” = Ne yıl ama!\n\nYol arkadaşım olduğun için teşekkürler 🙏",
   "reply": null,
@@ -4282,28 +4368,19 @@
   "topic": "İngilizce"
  },
  {
-  "n": 356,
-  "date": "2026-12-30",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\nfresh start (freş START)\n= yeni bir başlangıç\n\n“The new year is a fresh start.”\n= Yeni yıl yeni bir başlangıç.\n\n✍️ 2027'de neye fresh start yapacaksın? “In 2027, I want to...”\nYorumlarda görelim 👇",
-  "reply": "Bonus 🎁 Benzer kalıp: “turn over a new leaf” = sayfayı çevirmek, yeni bir sayfa açmak 🍃",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 287,
+  "n": 431,
   "date": "2026-12-30",
   "time": "13:00",
-  "series": "Öğle Testi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Öğle testi 🧩 Yılbaşı özel\n\nYarın gece yılbaşı sofrasındasın. Bardaklar havada, masada yabancı arkadaşların da var. Sen “Şerefe!” demek istiyorsun.\n\nİngilizcesi hangisi?\n\nA) Cheers!\nB) Honor!\nC) Drink!\n\nHarfini yorumlara bırak, cevap ilk yorumda 👇",
-  "reply": "Doğru cevap A ✅ “Cheers!” = Şerefe!\nBir dilek eklemek istersen: “Here's to 2027!” = 2027'ye!\n“Here's to...” her şeye uyar: “Here's to us!” = Bize!\nB kelimesi kelimesine çeviri, C ise “İç!” diye emir veriyor 😄\nBonus: İngiltere'de “Cheers!” teşekkür anlamında da kullanılır.",
-  "topic": "İngilizce Öğren"
+  "series": "Goof Videosu",
+  "topic": "İngilizce Konuşma",
+  "text": "Ev arkadaşın soruyor: “Are you coming tonight?”\n\nTürkçede “Bakarım” dersin. İngilizcede “I will look” dersen neye bakacağını sorarlar.\n\nDoğal hali: Maybe! I'll see how I feel.\n\nYılbaşı davetlerine en çok verdiğin cevap ne: “Kesin gelirim” mi, “bakarım” mı? 😄",
+  "video": "medya:v3/r32-pov-bakarim.mp4",
+  "fallback_img": "medya:v3/r32-pov-bakarim.jpg",
+  "alt": "Goof'lu sahne: “Bakarım” için “Maybe! I'll see how I feel.”",
+  "spoiler": [
+   "Maybe! I'll see how I feel."
+  ],
+  "src": "r32-pov-bakarim"
  },
  {
   "n": 288,
@@ -4323,11 +4400,11 @@
   "time": "21:00",
   "series": "Yılın Özeti",
   "cta": true,
-  "img": "card_yil.jpg",
+  "img": "v3/th-yil.jpg",
   "poll": null,
   "text": "Yılın özeti 💜 2026'da burada konuştuğumuz 9 cümle tek kartta.\n\nHangisini en çok kullandın? Yorumlara numarasını yaz, kartı da kaydet 🔖",
   "reply": "2027'ye sesli girmek için: LINGOOF'ta Goof'la sesli prova et 🎙️\n{LINK}",
-  "alt": "LINGOOF bilgi kartı. 2026’nın 9 cümlesi. Could you say that again? (Tekrar eder misin?); Could I get...? (...alabilir miyim?); Is breakfast included? (Kahvaltı dâhil mi?); I agree. (Katılıyorum.); Tell me about yourself. (Kendini anlat.); Long time no see! (Görüşmeyeli çok oldu!); break the ice (buzları kırmak); No spoilers! (Spoiler yok!); I'll get it! (Ben bakarım!).",
+  "alt": "LINGOOF yılın özeti kartı, Goof 2.0 ile: 2026'nın 9 cümlesi ve Türkçeleri.",
   "topic": "İngilizce"
  },
  {
@@ -4343,28 +4420,37 @@
   "topic": "İngilizce"
  },
  {
-  "n": 357,
-  "date": "2026-12-31",
-  "time": "11:00",
-  "series": "Günün Kelimesi",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Günün kelimesi 🔤\n\ncountdown (KAUNT-daun)\n= geri sayım\n\n“The countdown to 2027 has begun!”\n= 2027'ye geri sayım başladı!\n\n✍️ Gece yarısı kimle olacaksın? “At midnight, I'll be with...”\nCevabını yorumlara İngilizce yaz 👇",
-  "reply": "Bonus 🎁 Saat 12'yi vurunca: “Happy New Year!” Bütün yıl boyunca bizimle İngilizce pratik yaptığın için teşekkürler 💜",
-  "topic": "İngilizce Kelime"
- },
- {
-  "n": 291,
+  "n": 433,
   "date": "2026-12-31",
   "time": "13:00",
-  "series": "Sen Olsan?",
-  "cta": false,
-  "img": null,
-  "poll": null,
-  "text": "Sen olsan? ✍️\n\nElinde bir post-it var. 2027'deki kendine tek cümlelik bir not yazacaksın, İngilizce.\n\nNe yazardın?\n\nİstersen “Dear me,” (Sevgili ben,) diye başla. Kusursuz olmak zorunda değil, içten olsun yeter.\n\nNotunu yorumlara bırak, Goof'unki ilk yorumda 👇",
-  "reply": "Goof'un notu 💜\n“Dear me, don't be afraid to speak. Mistakes are part of it!”\n= Sevgili ben, konuşmaktan korkma. Hatalar da işin bir parçası!\n\nYazdım ve buzdolabının kapağına yapıştırdım bile 😄",
-  "topic": "İngilizce Konuşma"
+  "series": "Goof Kartları",
+  "topic": "İngilizce",
+  "text": "Bu yıl burada en çok konuştuğumuz 5 kalıp, tek yerde:\n\nWhat's up? · Can I get a latte? · Could we get the bill? · I'll see how I feel. · Take care!\n\nKaydet, 2027'de lazım olacak. Senin 2026'da öğrendiğin en kullanışlı cümle hangisi?",
+  "carousel": [
+   "medya:v3/c15-yilozeti/01.jpg",
+   "medya:v3/c15-yilozeti/02.jpg",
+   "medya:v3/c15-yilozeti/03.jpg",
+   "medya:v3/c15-yilozeti/04.jpg",
+   "medya:v3/c15-yilozeti/05.jpg",
+   "medya:v3/c15-yilozeti/06.jpg",
+   "medya:v3/c15-yilozeti/07.jpg",
+   "medya:v3/c15-yilozeti/08.jpg",
+   "medya:v3/c15-yilozeti/09.jpg",
+   "medya:v3/c15-yilozeti/10.jpg"
+  ],
+  "alts": [
+   "Kapak: Bu yıl öğrendiğin5 altın kalıp",
+   "What's up? (Ne var ne yok?)",
+   "Can I get a latte, please? (Bir latte alabilir miyim?)",
+   "Could we get the bill? (Hesabı alabilir miyiz?)",
+   "I'll see how I feel. (Bakarım, duruma göre.)",
+   "Take care! See you! (Kendine iyi bak! Görüşürüz!)",
+   "Mini test: ‘What's up?’ sorusuna cevap:",
+   "Cevap: Not much! You?",
+   "Özet: What's up? · Can I get a latte, please? · Could we get the bill? · I'll see how I feel. · Take care! See you!",
+   "Kaydet, gönder, yorum yap"
+  ],
+  "src": "c15-yilozeti"
  },
  {
   "n": 292,
@@ -4386,8 +4472,11 @@
   "cta": true,
   "img": null,
   "poll": null,
-  "text": "Ekimde “Merhaba, ben Goof!” diye başlamıştık. Şimdi yeni yıla üç saat var 💜\n\nBu yıl burada okuyan, test çözen, İngilizce yazmayı deneyen herkese kocaman teşekkürler.\n\n“Happy New Year!” 🎉 = Mutlu yıllar!\n\n2027'nin ilk İngilizce cümlesi sesli olsun: LINGOOF'ta Goof'la konuşarak başla 🎙️\n{LINK}",
-  "reply": "Goof'un son sözü 💜 “See you next year!”\nBu sefer gerçekten seneye, yani üç saat sonra 😄",
-  "topic": "İngilizce"
+  "text": "Ekimde “Merhaba, ben Goof!” diye başlamıştık. Yeni yıla üç saat kaldı 💜\n\nBu gece lazım olacak üç cümle:\nGece yarısı: Happy New Year!\nMesajla: All the best in 2027!\nKadeh kaldırırken: Here's to a great year!\n\nBurada okuyan, yazan, İngilizce cümle kurmayı deneyen herkese kocaman teşekkürler. 2027'de görüşmek üzere!",
+  "reply": "Goof'un son sözü 💜 “See you next year!”\nBu sefer gerçekten seneye, yani üç saat sonra 😄\n\n2027'nin ilk İngilizce cümlesi sesli olsun: LINGOOF'ta Goof'la sesli prova et, ilk dersler ücretsiz 🎙️ {LINK}",
+  "topic": "İngilizce",
+  "video": "medya:v3/r33-nasil-iyiseneler.mp4",
+  "fallback_img": "medya:v3/r33-nasil-iyiseneler.jpg",
+  "alt": "Goof'lu animasyon: “İyi seneler” için üç İngilizce karşılık."
  }
 ]

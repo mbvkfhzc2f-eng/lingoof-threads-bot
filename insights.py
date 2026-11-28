@@ -114,14 +114,19 @@ def clicks_section(data):
     return out
 
 
-def profile_views_section(data):
+def profile_views_section(data, rows, now):
     pv = data.get('profile_views') or {}
     if not pv:
         return []
     days = sorted(pv.items())
     last7 = sum(v for d, v in days[-7:])
     prev7 = sum(v for d, v in days[-14:-7])
-    return ['## Profil görüntülenmeleri', '', f'Son 7 gün: **{last7}** · önceki 7 gün: {prev7}', '']
+    start = (now - timedelta(days=7)).date().isoformat()
+    own = sum(r['views'] for r in rows if r['date'] >= start)
+    return ['## Hesap görüntülenmeleri', '',
+            f'Son 7 gün: **{last7}** · önceki 7 gün: {prev7} · aynı 7 günde kendi gönderilerimizin görüntülenmesi: {own}', '',
+            "Threads API'nin hesap düzeyindeki `views` metriği. Kendi gönderilerimizin toplamından çok yüksekse fark büyük "
+            'olasılıkla başkalarının gönderilerine yazdığımız yanıtların görüntülenmesinden gelir (yanıt görevi).', '']
 
 
 def report(rows, data, now):
@@ -143,7 +148,7 @@ def report(rows, data, now):
             'Yorum sayısına botun kendi ilk yorumu dahil değil. Son 24 saatte paylaşılanlar henüz oturmadığı için düşük görünebilir.',
             '', '## Son 7 gün', '', week_compare(rows, followers, now), '']
     out += clicks_section(data)
-    out += profile_views_section(data)
+    out += profile_views_section(data, rows, now)
     out += ['## Biçime göre', '', table(by_kind, 'Biçim'), '',
             '## Seriye göre', '', table(by_series, 'Seri'), '',
             '## Saate göre', '', table(by_time, 'Saat'), '',

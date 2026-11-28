@@ -1,14 +1,24 @@
 # LINGOOF Threads botu
 
-LINGOOF'un Threads planını kendi kendine paylaşır: **18 Ekim (açılış) – 31 Aralık 2026**, her gün **09:00, 11:00, 13:00, 18:00 ve 21:00**'da (Türkiye saati; 11:00 "Günün Kelimesi" 28 Ekim'de başlıyor) o saate düşen gönderi resmi Threads API ile atılır. Bilgisayarının açık olması gerekmez; bot GitHub'ın sunucularında ücretsiz çalışır.
+LINGOOF'un Threads planını kendi kendine paylaşır: **18 Ekim (açılış) – 31 Aralık 2026**. Gönderiler Türkiye saatiyle kendi tarih ve saatinde resmi Threads API ile atılır. Bilgisayarının açık olması gerekmez; bot GitHub'ın sunucularında ücretsiz çalışır.
 
-- 358 gönderi: metinler, anketler, görselli gönderiler, özel günler (29 Ekim, 10 Kasım, Öğretmenler Günü, yılbaşı...) ve yanıtlar
-- Her 7 gönderiden birinde App Store linki: `https://apps.apple.com/tr/app/lingoof/id6816741034`
-- Aynı gönderi iki kez gitmez. Saati 4 saatten fazla geçen gönderi atlanır, plan takvimdeki tarihlerden şaşmaz. Bot geç kurulsa bile hesabın ilk gönderisi tanışma gönderisi olur. 31 Aralık'tan sonra kendiliğinden durur.
-- GitHub botu her 15 dakikada bir yoklar; saati gelmiş gönderi varsa paylaşılır. GitHub'ın zamanlayıcısı garanti vermediği için dakikası dakikasına paylaşım için aşağıdaki **dış tetikleyici** önerilir.
-- Bir anket oluşturulamazsa gönderi kaybolmaz: seçenekler metne yazılıp gönderi yine paylaşılır.
-- Token üç günde bir otomatik yenilenir.
-- Sohbetlere katılma: dil öğrenmeyi konuşan gönderilere günde en fazla 10 faydalı yanıt. Meta onayı gerekiyor, ayrıntılar aşağıda.
+**29 Kasım'dan itibaren günlük düzen** (28 Kasım'daki veri analizine göre yenilendi, ayrıntı: `plan/aralik_v3.py`):
+
+| Saat | Ne | Neden |
+|---|---|---|
+| 09:00 | Günün cümlesi, deyim ya da gramer: gerçek hayattan bir sahne ve soru | Sabah en çok görülen saat |
+| 11:00 (salı, perşembe, cumartesi) | V3 carousel: 5 cümle, mini test, özet | Kaydedilen içerik |
+| 13:00 | Goof 2.0 videosu (build 140 görünümü); ana metin tek başına da öğretir, cevap çoğu zaman spoiler'da | Videolar ve görseller Threads'te metinden daha çok etkileşim alıyor |
+| 18:00 | Gerçek hayat sahnesi, Goof soruyor, doğru mu yanlış mı, cuma modu, pazar hikâyesi | Sohbet açan sorular |
+| 21:00 | Akşam notu, sesli görev, haftanın özeti (V3 kart) | Akşam etkileşimi en yüksek |
+
+- **Link kuralı:** App Store linki ana gönderide hiç yok (linkli gönderiler medyan 9 görüntülenmede kalıyordu). Günde en fazla bir gönderinin **ilk yorumunda**, önizleme kartıyla durur. Tıklamalar `insights.md` › Link tıklamaları bölümünde görünür.
+- **Görseller:** Yalnızca uygulamanın V3 tasarımı ve build 140'ın Goof 2.0 pozlarıyla stüdyoda üretilen görseller ve videolar kullanılır; yapay zekâ görsel/video aracı yok. Eski Goof'lu kartlar ve yapay zekâ fotoğrafları plandan çıkarıldı (dosyaları geçmiş gönderiler için `img/` klasöründe duruyor; plan denetimi yeniden kullanılmalarını engeller).
+- **Medya dalı:** Videolar ve carousel görselleri depoyu şişirmesin diye ayrı `medya` dalında. Gönderiler onlara `medya:v3/...` diye başvurur.
+- Aynı gönderi iki kez gitmez. Saati 4 saatten fazla geçen gönderi atlanır. 31 Aralık'tan sonra kendiliğinden durur.
+- Bir biçim olmazsa gönderi kaybolmaz: video olmazsa kapak görseliyle, carousel olmazsa ilk görselle, o da olmazsa metin olarak gider. Spoiler kabul edilmezse cevap ilk yoruma taşınır. Anket oluşturulamazsa seçenekler metne yazılır.
+- Token GH_PAT gerekmeden canlı kalır (aşağıda).
+- Sohbetlere katılma: Claude'un günlük yanıt görevi dil öğrenmeyi konuşan gönderilere faydalı yanıtlar yazar (ayrıntılar aşağıda).
 
 ## Kurulum (bir kerelik, ~15 dakika)
 
@@ -29,24 +39,42 @@ Deponun **Settings › Secrets and variables › Actions › New repository secr
 **Actions** sekmesinde **Threads paylaşımı › Run workflow** düğmesine bas. "Deneme" işaretli kalsın. Kayıtta hesap adını ve sıradaki gönderiyi görürsen her şey hazır. İlk gerçek paylaşım bir sonraki paylaşım saatinde gider.
 
 ## Ayarlar
-- `posts.json`: her gönderinin tarihi, saati ve metni burada. GitHub üzerinden düzenleyebilirsin; `{LINK}` yazan yere App Store linki girer.
-  - `topic`: Threads konu etiketi (ör. "İngilizce", "İngilizce Öğren"). Gönderiyi o konunun akışında da gösterir. Etiket reddedilirse gönderi etiketsiz gider, hiçbir zaman takılmaz.
-  - `poll`: 2–4 seçenekli anket (her seçenek en fazla 25 bayt). Anket oluşturulamazsa seçenekler metne yazılıp paylaşılır.
-  - `img` / `alt`: `img/` klasöründeki görsel ve görme engelliler için açıklaması. `card_*.jpg` dosyaları kaydedilmeye uygun LINGOOF bilgi kartları.
+- `posts.json`: her gönderinin tarihi, saati, metni ve biçimi burada. `{LINK}` yazan yere App Store linki girer; link yalnızca `reply` (ilk yorum) içinde kullanılır.
+  - `topic`: Threads konu etiketi (ör. "İngilizce", "İngilizce Konuşma"). Reddedilirse gönderi etiketsiz gider.
+  - `reply`: gönderiden 45 saniye sonra altına eklenen ilk yorum (ipucu, cevap ya da linkli çağrı).
+  - `video` + `fallback_img` + `alt`: Goof 2.0 videosu, video olmazsa kullanılacak kapak ve açıklama.
+  - `carousel` + `alts`: 2–20 görsel ve her birinin açıklaması.
+  - `img` / `alt`: tek görsel (`img/` klasöründen, ör. `v3/th-is.jpg`).
+  - `spoiler`: metindeki cevabın birebir aynısı (liste). Threads'te üstü kapalı görünür, dokununca açılır. Spoiler'dan önce emoji olmamalı.
+  - `poll`: 2–4 seçenekli anket (her seçenek en fazla 25 bayt).
+- `config.json`: `app_store_url`, `media_base_url` (medya dalının adresi), `video_base_url` (videolar için farklı bir adres gerekirse), `grace_hours`, `reply_delay_seconds`.
+- `plan/medya.json`: medya dalındaki dosyaların listesi; plan denetimi bununla karşılaştırır.
+- Plan denetimi: `python3 bot.py --check` (metin uzunluğu, spoiler, medya, eski görsel, ana metinde link).
+- **Deneme:** Actions › Threads paylaşımı › Run workflow, "Deneme" işaretli: sıradaki gönderi, plan denetimi ve önümüzdeki 3 günün medya adresleri.
+- **Doğrula:** aynı yerde "Deneme"nin işaretini kaldırıp "Doğrula"yı işaretle: sıradaki medyalı gönderilerin (ya da yazdığın numaraların) konteynerleri Meta'da oluşturulur ama **yayımlanmaz**. Videonun, carousel'ın ve spoiler'ın kabul edilip edilmediğini gösterir.
 - Durdurmak için: **Actions › Threads paylaşımı › ⋯ › Disable workflow**. Tekrar açınca o günün tarihinden devam eder.
 - Bir çalışma hata verirse GitHub sana e-posta atar. Son hatanın metni `state.json` içindeki `last_error` alanında da durur. Aynı gönderi 3 kez hata verirse atlanır.
 
 ## İstatistikler
-**Threads istatistikleri** iş akışı her sabah 07:27'de paylaşılan her gönderinin görüntülenme, beğeni, yorum, repost, alıntı ve paylaşım sayılarını ve takipçi sayısını çeker:
-- `insights.md`: seriye ve saate göre ortalamalar, en çok etkileşim alan 10 gönderi. Hangi serinin işe yaradığını görüp planı buna göre ayarlamak için.
-- `insights.json`: ham veri ve günlük takipçi sayısı.
+**Threads istatistikleri** iş akışı her sabah 07:27'de çalışır ve `insights.md`'yi günceller:
+- Son 7 gün ile önceki 7 günün karşılaştırması (ortalama/medyan görüntülenme, yorum, yeni takipçi)
+- **Link tıklamaları:** App Store linkine planın başından beri kaç kez tıklandığı (Threads API `clicks` metriği) ve son 7 gün
+- **Hesap görüntülenmeleri:** hesap düzeyindeki görüntülenme; kendi gönderilerimizden çok yüksekse farkı büyük olasılıkla yanıtlarımız getiriyor
+- Biçime (metin, görsel, video, carousel, anket, link), seriye, saate ve güne göre tablolar; en çok görülen ve en çok yorum alan 10 gönderi
+- `insights.json`: ham veri, günlük takipçi, günlük tıklama toplamı
 
-Bunun için token'da `threads_manage_insights` izni olmalı: 2. adımın 4. maddesindeki gibi izni ekle, 5. maddedeki gibi **yeni token üret** ve `THREADS_TOKEN` secret'ını yeni token'la güncelle. İzin yoksa iş akışı yalnızca uyarı verir, paylaşımlar etkilenmez. Hemen denemek için: **Actions › Threads istatistikleri › Run workflow**.
+Bunun için token'da `threads_manage_insights` izni olmalı (var). İzin yoksa iş akışı yalnızca uyarı verir, paylaşımlar etkilenmez. Hemen denemek için: **Actions › Threads istatistikleri › Run workflow**.
 
 ## Sohbetlere katılma (yanıt sistemi)
-LINGOOF hesabı, Threads'te dil öğrenmeyi konuşan insanların gönderilerine faydalı yanıtlar yazar. Amaç satış yapmak değil. İşe yarayan bir öneri, gönderiyi yazan kişiyi de okuyanları da profile getirir.
+LINGOOF hesabı, Threads'te dil öğrenmeyi konuşan insanların gönderilerine faydalı yanıtlar yazar. Amaç satış yapmak değil. İşe yarayan bir öneri, gönderiyi yazan kişiyi de okuyanları da profile getirir. Veriler bunun hesabın en büyük erişim kaynağı olduğunu gösteriyor: hesap düzeyindeki görüntülenme, kendi gönderilerimizin görüntülenmesinin birkaç katı.
 
-- Günde 4 kez (10:37, 13:37, 15:37 ve 21:37) Claude'un **LINGOOF yanıt turu** görevi bir arama başlatır. `yanitlar/ayar.json` içindeki anahtar kelimelerle ("İngilizce kursu", "YDS", "dil öğrenmek"...) son 36 saatte paylaşılmış gönderiler bulunur.
+**Şu an çalışan yol (tarayıcı):** Claude'un **LINGOOF Threads yanıtları** görevi her gün 11:34'te, bilgisayarındaki Claude masaüstü uygulamasının yerleşik tarayıcısında @lingoof.app oturumuyla çalışır: anahtar kelimelerle son Türkçe dil öğrenme gönderilerini bulur, günde en fazla 10 faydalı yanıt yazar ve yanıtlarımıza gelen cevapları yanıtlar. Bilgisayar kapalıysa o günün turu yapılmaz.
+
+**Bekleyen iyileştirme:** görevi günde iki tura (11:34 ve 21:34) çıkaran, önce kendi gönderilerimize gelen yorumları yanıtlayan (İngilizce cümle yazanlara Türkçe açıklamalı nazik düzeltme dahil) ve yeni yanıtların yarısını popüler gönderilere yazan güncelleme hazır: `yanitlar/YANIT_GOREVI_V2.md`. Zamanlanmış görevi değiştirmek senin onayını gerektiriyor; Claude'a "LINGOOF Threads yanıt görevini V2'ye güncelle" yazman yeterli.
+
+**API yolu (Meta onayı bekliyor):** Aşağıdaki sistem, Meta `threads_keyword_search` iznini onaylarsa tarayıcı olmadan bulutta çalışır.
+
+- Claude'un **LINGOOF yanıt turu** görevi bir arama başlatır. `yanitlar/ayar.json` içindeki anahtar kelimelerle ("İngilizce kursu", "YDS", "dil öğrenmek"...) son 36 saatte paylaşılmış gönderiler bulunur.
 - Claude adayları okur ve yalnızca gerçekten katkı sunabileceği gönderilere `yanitlar/YAZIM_REHBERI.md`'deki kurallara göre yanıt yazar. Reklam, hassas konu, konu dışı gönderiler ve çocuk yaşta görünen yazarların gönderileri geçilir.
 - Yanıtlar 1–2,5 dakika arayla LINGOOF hesabından gider.
 - Sınırlar: günde en fazla 10 yanıt ve aynı kişiye 14 günde en fazla bir yanıt. Yanıtlarda link, hashtag, @etiket ya da "indir" çağrısı olmaz. Bu kurallar kodda da denetlenir.
@@ -76,7 +104,7 @@ GitHub'ın kendi zamanlayıcısı garanti vermez. Yoğun günlerde çalıştırm
    - Token'ı kopyala, yalnızca bir kez gösterilir.
 2. **cron-job.org:** ücretsiz hesap aç › **Create cronjob**.
    - URL: `https://api.github.com/repos/mbvkfhzc2f-eng/lingoof-threads-bot/actions/workflows/post.yml/dispatches`
-   - Zamanlama (Custom): saatler **9, 13, 18, 21**; dakikalar **1, 6, 31**; saat dilimi **Europe/Istanbul**. 6. dakika, 10 Kasım'daki 09:05 anma paylaşımı içindir; 31. dakika yedektir.
+   - Zamanlama (Custom): saatler **9, 11, 13, 18, 21**; dakikalar **1, 6, 31**; saat dilimi **Europe/Istanbul**. 6. dakika, 10 Kasım'daki 09:05 anma paylaşımı içindir; 31. dakika yedektir.
    - Gelişmiş ayarlarda istek yöntemi **POST**. Header olarak şunları ekle:
      - `Accept: application/vnd.github+json`
      - `Authorization: Bearer <kopyaladığın token>`
@@ -86,13 +114,9 @@ GitHub'ın kendi zamanlayıcısı garanti vermez. Yoğun günlerde çalıştırm
 
 GitHub'ın 15 dakikalık yoklaması yedek olarak çalışmaya devam eder. İkisi aynı anda çalışsa bile bir gönderi iki kez gitmez.
 
-## Gerekli: GH_PAT (token'ın aralık sonuna kadar geçerli kalması için)
-Threads token'ı 18 Ekim'de alındı ve yaklaşık 17 Aralık'ta sona erer. Plan 31 Aralık'a kadar sürdüğü için token'ın yenilenmesi gerekiyor. Meta her yenilemede yeni bir token veriyor ve botun bunu `THREADS_TOKEN` olarak kaydedebilmesi için GitHub'da bir izin token'ı lazım:
+## Token'ın canlı kalması (GH_PAT gerekmez)
+Uzun ömürlü Threads token'ı 60 gün geçerli; her yenilemede Meta yeni bir token verir ve süre yeniden 60 gün olur. **Threads token yenileme** iş akışı üç günde bir yeni token'ı alır, `THREADS_TOKEN` secret'ından türetilen anahtarla şifreler (AES-256) ve GitHub Actions önbelleğine yazar (`token_store.py`). Paylaşım, istatistik ve yanıt iş akışları önce önbellekteki bu güncel token'ı açar; yoksa secret'ı kullanır. Önbellek depoda görünmez, anahtarsız açılamaz, token'lar günlükte hep maskelidir.
 
-1. GitHub › Settings › Developer settings › Personal access tokens › **Fine-grained tokens** › **Generate new token**
-   - Repository access: **Only select repositories** › `lingoof-threads-bot`
-   - Permissions › Repository permissions › **Secrets: Read and write** (başka izin gerekmez)
-   - Expiration: 1 Ocak 2027 ya da sonrası
-2. Oluşan token'ı kopyala ve deponun **Settings › Secrets and variables › Actions › New repository secret** bölümüne `GH_PAT` adıyla ekle.
-
-Bundan sonra token üç günde bir kendiliğinden yenilenir. GH_PAT eklenene kadar yenileme adımı Actions'ta yalnızca uyarı gösterir. 1 Aralık'tan itibaren hata verip e-posta gönderir ki token sona ermeden fark edilsin. GH_PAT eklemek istemezsen 1 Aralık civarında 2. adımdaki gibi yeni bir Threads token'ı üretip `THREADS_TOKEN`'ı güncellemen de yeterli.
+- İlk yenileme 28 Kasım'da yapıldı: token 59 gün geçerli ve her üç günde bir uzuyor. 17 Aralık'taki eski bitiş tarihi artık sorun değil.
+- GH_PAT eklemen gerekmiyor. Eklersen secret da ayrıca güncellenir.
+- Token bir gün tamamen geçersiz olursa (ör. şifre değişikliği, uygulama izni kaldırma) yenileme adımı hata verir ve GitHub e-posta atar; o zaman Kurulum › 2. adımla yeni token üretip `THREADS_TOKEN`'ı güncellemen yeterli.

@@ -80,7 +80,7 @@ def report(rows, followers, now):
 
 
 def main():
-    token = os.environ.get('THREADS_TOKEN', '').strip()
+    token = (os.environ.get('THREADS_TOKEN_LIVE') or os.environ.get('THREADS_TOKEN', '')).strip()
     if not token:
         sys.exit('THREADS_TOKEN tanımlı değil.')
     now = datetime.now(TZ)

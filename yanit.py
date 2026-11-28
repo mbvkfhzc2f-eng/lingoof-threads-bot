@@ -265,7 +265,7 @@ def _bul(ayar, deneme, an, durum):
     if not ayar['acik']:
         durum['not'] = 'Yanıt sistemi kapalı (yanitlar/ayar.json › "acik": false).'
         return []
-    token = os.environ.get('THREADS_TOKEN', '').strip()
+    token = (os.environ.get('THREADS_TOKEN_LIVE') or os.environ.get('THREADS_TOKEN', '')).strip()
     if not token:
         durum['hata'] = 'THREADS_TOKEN tanımlı değil.'
         return []
@@ -470,7 +470,7 @@ def gonder():
     if not sira:
         print('Gönderilecek yanıt yok.')
         return
-    token = os.environ.get('THREADS_TOKEN', '').strip()
+    token = (os.environ.get('THREADS_TOKEN_LIVE') or os.environ.get('THREADS_TOKEN', '')).strip()
     if not token and not deneme:
         report_error('THREADS_TOKEN tanımlı değil.')
         sys.exit(1)

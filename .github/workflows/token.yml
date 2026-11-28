@@ -1,7 +1,9 @@
 name: Threads token yenileme
 
-# Uzun ömürlü token 60 gün geçerli; yenilendikçe 60 gün uzar. GitHub zamanlanmış çalıştırmaları atlayabildiği için
-# ayda iki kez yerine üç günde bir denenir, böylece biri kaçsa bile token plan boyunca canlı kalır.
+# Uzun ömürlü Threads token'ı 60 gün geçerli; her yenilemede Meta yeni bir token verir ve süre yeniden 60 gün olur.
+# Yeni token, THREADS_TOKEN secret'ından türetilen anahtarla şifrelenip GitHub Actions önbelleğine yazılır (token_store.py);
+# paylaşım, istatistik ve yanıt iş akışları onu oradan açar. GH_PAT gerekmez; varsa secret da güncellenir.
+# GitHub zamanlanmış çalıştırmaları atlayabildiği için üç günde bir denenir; biri kaçsa da token canlı kalır.
 on:
   schedule:
     - cron: '41 3 */3 * *'
@@ -12,35 +14,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Önbellekteki token
+        uses: actions/cache/restore@v4
+        with:
+          path: .thtok
+          key: thtok-${{ github.run_id }}
+          restore-keys: thtok-
+
       - name: Token'ı yenile
+        id: th
         env:
-          TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT }}
           REPO: ${{ github.repository }}
-        run: |
-          set -u
-          resp=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${TOKEN}")
-          new=$(printf '%s' "$resp" | python3 -c 'import sys,json; print(json.load(sys.stdin).get("access_token",""))' 2>/dev/null || true)
-          if [ -z "$new" ]; then
-            # Token 24 saatten yeniyse yenilenemez; hâlâ çalışıyorsa sorun yok
-            if curl -sf "https://graph.threads.net/v1.0/me?fields=id&access_token=${TOKEN}" > /dev/null; then
-              echo "Token şimdilik yenilenmedi ama geçerli; bir sonraki seferde tekrar denenecek."
-              exit 0
-            fi
-            echo "::error::Token geçersiz ya da süresi dolmuş. README'deki 2. adımla yeni token üretip THREADS_TOKEN'ı güncelle."
-            exit 1
-          fi
-          echo "::add-mask::$new"
-          days=$(printf '%s' "$resp" | python3 -c 'import sys,json; print(int(json.load(sys.stdin).get("expires_in",0))//86400)')
-          if [ "$new" = "$TOKEN" ]; then
-            echo "Token uzatıldı: ${days} gün geçerli."
-          elif [ -n "${GH_PAT:-}" ]; then
-            printf '%s' "$new" | GH_TOKEN="$GH_PAT" gh secret set THREADS_TOKEN --repo "$REPO"
-            echo "Yeni token kaydedildi: ${days} gün geçerli."
-          elif [ "$(date -u +%Y%m%d)" -lt 20261201 ]; then
-            # Eski token çalışmaya devam ediyor (18 Ekim'de alındı, ~17 Aralık'a kadar geçerli): 3 günde bir hata e-postası atma
-            echo "::warning::Meta yenilenmiş bir token verdi ama GH_PAT olmadığı için kaydedemedim. Şu anki token çalışıyor, yaklaşık 17 Aralık'a kadar geçerli. README'deki GH_PAT adımı yapılmazsa 1 Aralık'tan itibaren bu adım hata verir."
-          else
-            echo "::error::Token yakında (~17 Aralık) sona eriyor ve yenisini kaydedemiyorum. README'deki GH_PAT adımını yap ya da yeni token üretip THREADS_TOKEN'ı güncelle."
-            exit 1
-          fi
+        run: python3 token_store.py refresh
+
+      - name: Yeni token'ı önbelleğe kaydet
+        if: always() && steps.th.outputs.saved == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .thtok
+          key: thtok-${{ github.run_id }}

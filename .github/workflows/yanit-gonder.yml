@@ -29,6 +29,18 @@ jobs:
         with:
           ref: main
 
+      - name: Önbellekteki token
+        uses: actions/cache/restore@v4
+        with:
+          path: .thtok
+          key: thtok-${{ github.run_id }}
+          restore-keys: thtok-
+
+      - name: Token'ı aç
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: python3 token_store.py load
+
       - name: Yanıtları gönder
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}

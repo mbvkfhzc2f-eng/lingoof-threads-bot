@@ -36,6 +36,18 @@ jobs:
         with:
           ref: main      # tetiklendiği anki değil en güncel state.json: art arda iki çalıştırma aynı gönderiyi atmasın
 
+      - name: Önbellekteki token
+        uses: actions/cache/restore@v4
+        with:
+          path: .thtok
+          key: thtok-${{ github.run_id }}
+          restore-keys: thtok-
+
+      - name: Token'ı aç
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: python3 token_store.py load
+
       - name: Sıradaki paylaşımı gönder
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}

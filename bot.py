@@ -179,7 +179,7 @@ def main():
     state = load('state.json', {'posted': {}, 'skipped': []})
     posts = load('posts.json')
     dry = os.environ.get('DRY_RUN', '').strip().lower() in ('1', 'true', 'yes')
-    token = os.environ.get('THREADS_TOKEN', '').strip()
+    token = (os.environ.get('THREADS_TOKEN_LIVE') or os.environ.get('THREADS_TOKEN', '')).strip()
     now = datetime.now(TZ)
 
     if not token:
